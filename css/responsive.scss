@@ -1,0 +1,762 @@
+/* Scss Document */
+@charset "UTF-8";
+
+$burger-height: 2px;
+$burger-color: rgba(255,255,255,0.7);
+$margin-top: 8px;
+$rotation: 45deg;
+
+$main_color: #a5140e;
+$sub_color: #1c1a1a;
+$gold_color: #d7c27c;
+$main_font: 'Noto Serif SC Light, serif';
+$ENtitle_font: 'Quicksand', sans-serif;
+$number_font: 'Abril Fatface', cursive;
+$ENnavAndMenuTitle: 'Crimson Text', serif;
+$MenuJP_title: 'M PLUS Rounded 1c', sans-serif;
+$small_titlecolor: #ffba20;
+$phone_breakpoint: 768px;
+
+@mixin font_control ($gpfs: 1.5rem, $gplh: 1.5, $gpspace: 1px, $gpcolor: #222) {
+    font-size: $gpfs;
+    line-height: $gplh;
+    letter-spacing: $gpspace;
+    color: $gpcolor;
+}
+
+@mixin WHM ($gpwidth: auto, $gpheight: auto, $gpmargin: 0 auto) {
+    width: $gpwidth;
+    height: $gpheight;
+    margin: $gpmargin;
+}
+
+@mixin MX ($MXgpwidth: auto, $MXgpheight: auto, $gpwidth: 100%, $gpheight: auto, $gpmargin: 0 auto) {
+    max-width: $MXgpwidth;
+    max-height: $MXgpheight;
+    width: $gpwidth;
+    height: $gpheight;
+    margin: $gpmargin;
+}
+
+@mixin FLEX($FLEXdisplay: flex, $FLEXalign: center, $FLEXwrap: wrap) {
+    display: $FLEXdisplay;
+    justify-content: $FLEXalign;
+    flex-wrap: $FLEXwrap;
+}
+
+@media screen and (max-width: $phone_breakpoint) {
+#wrapper {
+    .contents-title {
+        font-size: 2.0rem;
+        padding: 10px;
+    }
+    
+    .contents-title-sub {
+        font-size: 1.5rem;
+    }
+    
+    #header {    
+    
+        .menu-button {
+            display: block;
+        }
+    
+        .header-contents-two {
+            display: none;
+        }
+        
+        .global-nav-ul {
+            display: none;
+        }
+    }
+    
+#main {
+    .section-title {
+        font-size: 3.0rem;
+        
+    }
+    
+    [class$="contents-inner"] {
+        margin: 0 auto;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .header-wrap {
+            width: 330px;
+            padding: 20px;
+            background: url("../images/wine_image_respo.png") no-repeat;
+            background-size: cover;
+            @include MX(336px, 505px, 100%, 505px);
+            text-align: center;
+            position: relative;
+            
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -220px;
+                display: block;
+                width :800px;
+                height: 506px;
+                background-color: #1c1c1c;
+                z-index: -1;
+            }
+                
+            .article-maintitle {
+                font-size: 2.2rem;
+                margin: 51px auto;
+                line-height: 1.8;
+            }
+        }
+    }
+    
+    .article-image {
+            display:none;
+        }
+    
+    .sub {
+        @include MX(850px, auto, 90%, auto, 20px auto);
+        line-height: 1.9;
+        text-align: left;
+        
+        br {
+            display: none;
+        }
+    }
+    
+    .slidbox {
+        
+        li {
+
+            &:nth-of-type(1) {
+                display: block;
+            }
+
+            &:nth-of-type(2) {
+                display: none;
+            }
+
+            &:nth-of-type(3) {
+                display: none;
+            }
+        }
+    }
+    
+    #home {
+        
+        .home-service {
+            @include MX(320px, none, 100%, auto, 0 auto 20px);
+        }
+        
+        
+        .home-sub-caption {
+            width: 100%;
+            padding: 15px 10px;
+            line-height: 2.2;
+            text-align: left;
+            
+            &::after {
+                display: none;
+            }
+        }
+        
+        .home-sub {
+            width: 100%;
+            text-align: left;
+            
+            &::before {
+                display: none;
+            }
+        }
+        
+        .side-contents {
+        }
+    }
+/*----------------------------------------------------------------------
+
+                                マテリアル
+
+------------------------------------------------------------------------*/
+    #material {
+        .material-list {
+            width: 472px;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .material-list-image {
+            @include MX(472px, 315px, 472px, 315px);
+        }
+        
+        
+    }
+    
+/*----------------------------------------------------------------------
+
+                                ワイン
+
+------------------------------------------------------------------------*/
+    #wine {
+        width: 100%;
+        
+        .wine-contents-one {
+            width: 100%;
+        
+            .aboutwine {
+                background: $main_color;
+                margin: 0 auto;
+                padding: 25px;
+                width: 100%;
+                text-align: center;
+                
+                dt {
+                    background: #fff;
+                    color: $sub_color;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                
+                dd {
+                    text-align: center;
+                    color: white;
+                    float: none;
+                    display: block;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+                    &:nth-of-type(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .wine-contents-two {
+            margin: 0;
+            
+            .wine-price-inner {
+
+                [class^="wine-price-"] {
+                    margin: 10px;
+
+                }
+            }
+        }
+    
+        .wine-contents-three {
+            background: none;
+            @include WHM(95%);
+    
+            &::after {
+                background: none;
+                
+            }
+    
+            h3 {
+                font-size: 2.8rem;
+                border: none;
+                letter-spacing: 2px;
+
+            }
+            
+            .pickup-button {
+                display: block;
+                @include WHM(240px, 38.5px, 15px auto);
+                font: {
+                    weight: 500;
+                    size: 25px;
+                    family: $ENtitle_font;
+                }
+                letter-spacing: 2px;
+                background: #d6cf92;
+                border-radius: 10px;
+                vertical-align: middle;
+                color: #686246;
+                outline: none;
+            }
+        }
+        
+        .pickupul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            background: none;
+            display: none;
+            
+            /*@include WHM(1005px);
+            background: url("../images/pickup_line.png") repeat-y;
+            transform: translateX(-1px);
+            position: relative;
+            z-index: -5;
+            padding-top: 32px;*/
+    
+    
+            .pickup {
+                width: 100%;
+                margin: 0 auto 50px;
+                display: block;
+                /*
+                width: 400px;
+                margin: 0 50px 50px;
+                display: inline-block;*/
+                
+                .pickup-images {
+  
+                }
+        
+                .pickup-num {
+                    
+                    /*font-size: 3.615rem;
+                    font-family: $number_font;
+                    color: #d6cf92;*/
+            
+                    &::after {
+                        /*content: "uno";
+                        @extend .pickupnumonly;*/
+                    }
+                }
+        
+                .pickup-title {
+                    padding: 1rem;
+                }
+                
+                .pickup-sub {
+                    padding: 1rem;
+                    max-width: 500px;
+                    width: 100%;
+                    @include MX(500px, auto, 100%, auto);
+                }
+            }
+        }
+
+
+.pickup-images {
+    
+    img:nth-of-type(1) {
+        display: inline-block;
+        @include WHM(120px, 222px);
+    }
+    
+    img:nth-of-type(2) {
+        display: inline-block;
+        @include WHM(237px, 237px);
+    }
+}
+
+    }
+        
+        
+    
+/*----------------------------------------------------------------------
+
+                                フード
+
+------------------------------------------------------------------------*/
+    #food {
+        
+        .food-caption-contents-inner {
+            margin-right: 28px;
+            
+            .header-wrap {
+                background: url("../images/food_image_respo.png") no-repeat;
+                width: 320px;
+                margin: 0 auto;
+            }
+        }
+
+        .foodimage-one {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            max-width: 708px;
+            width: 100%;
+    
+            img {
+                display: block;
+                margin: 0;
+                @include MX(236px, 236px, 35vw, 35vw, 0);
+            }
+        }
+        
+        .food-chef-contents {
+            padding: 30px 0;
+            
+            .food-chef-figure {
+                padding: 0 20px;
+            }
+            
+            .food-chef-date {
+                display: block;
+                text-align: left;
+                //@include MX(900px, none, 100%, auto);
+                //display: table;
+                //text-align: center;
+
+
+                .date1, .date2 {
+                    display: block;
+                    //display: table-cell;
+                    //padding: 15px;
+                    //line-height: 1.5;
+                    //text-align: left;
+                }
+
+                .date1 {
+                    //font-size: 1.8rem;
+
+                    .food-chef-name {
+                        //font-size: 3.0rem;
+                        //color: #d6cf92;
+                    }
+                }
+
+                .date2 {
+                    width: 100%;
+                    //width: 600px;
+                }
+            }
+        }
+        
+        
+        .food-contents-special {
+            
+        }
+    }
+    
+/*----------------------------------------------------------------------
+
+                                ドリンク
+
+------------------------------------------------------------------------*/
+#drink {
+
+    .drink-list {
+        max-width: 1200px;
+        margin: 20px auto 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        li {
+            width: 130px;
+            margin: 0 10px;
+        }
+    }
+
+    .drink-button {
+        display: none;
+    }
+    
+    .drink-button-phone {
+        display: block;
+        @include WHM(130px, 130px, 0 auto 23px);
+        
+    }
+
+    .drink-genre {
+        display: none;
+    }
+
+
+
+    .drinkmenu {
+        $drWHM:  150px;
+        @include WHM($drWHM, auto, 0 auto 10px);
+        padding: 0;
+        
+    
+        .list-layer2 {
+            
+            text-align: left;
+            dt {
+                
+                &:nth-of-type(1)::after {
+                    @include WHM($drWHM, auto);
+                }
+            
+                &:nth-of-type(2) {
+                    display: block;
+                    float: none;
+                    clear: both;
+                }
+                
+                img {
+                    @include WHM($drWHM, auto, 0 0);
+                    
+                }
+            }
+            
+            dd {
+                display: block;
+                float: none;
+                clear: both;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
+    
+/*----------------------------------------------------------------------
+
+                        パーティアンドイベント
+
+------------------------------------------------------------------------*/
+    #party {
+        .header-image.party {
+            &::before, &::after {
+                display: none;
+            }
+        }
+        
+        .party-contents-two {
+            margin: 20px 0 0 -15px;
+        }    
+    }
+
+    
+}
+}
+    
+    
+    #footer {
+        .tel {
+            display: block;
+            flex-wrap: nowrap;
+            font-size: 1.7rem;
+            background: url(../images/footer_telback_phone.svg) no-repeat;
+            @include WHM(304px, 82px);
+            position: relative;
+        
+            p:nth-of-type(1) {
+                display: block;
+                text-align: left;
+                margin: 0;
+                position: absolute;
+                top: 12px;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+            }
+            
+            p:nth-of-type(2) {
+                display: block;
+                text-align: left;
+                font-size: 3.0rem;
+                margin: 0;
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+            }
+        }
+
+    .address-sub {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .address-inner {
+        @include MX(620px, auto, 100%, auto, 12px auto 0);
+        text-align: left;
+        padding: 20px;
+    
+        .address-description {
+        
+            dt {
+                margin-top: 8px;
+                padding: 3px;
+            }
+        
+            &:nth-of-type(1) {
+                float: none;
+                display: block;
+                clear:both;
+            }
+        
+            &:nth-of-type(2) {
+                float: none;
+                display: block;
+                clear:both;
+            }
+        }
+    }
+
+        
+        .footer-contents-other {
+            display: block;
+        }
+        
+        .footer-link-one {
+            margin-right: 0;
+            
+            ul {
+                margin: 0 auto;
+            }
+        }
+        
+        .footer-link-two {
+            font-family: sans-serif;
+            text-align: left;
+        
+            ul {
+                letter-spacing: 2px;
+                margin-top: 22px;
+            
+                li {
+                    display: block;
+                    margin: 0 0 15px 0;
+                    text-align: center;
+                }
+            }
+            
+            p {
+                text-align: center;
+            }
+        
+        }
+    }
+    
+    .slidebar {
+        overflow: hidden;
+        font-family: $main_font;
+        
+        
+        .slide-title-image {
+            display: block;
+            width: 85%;
+        }
+        
+        .slide-info {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 300px;
+            background: #000;
+            color: #fff;
+            padding: 15px;
+            
+            >p {
+                font-size: 2.0rem;
+                margin-bottom: 8px;
+            }
+            
+            p {
+                text-align: left;
+                line-height: 1.9;
+            }
+            
+        }
+        
+        .nav-title.title-font {
+            margin-top: 170px;
+        }
+    }
+}
+
+    
+    
+@media(max-width: 900px) {
+    #material {
+        .material-contents-pickup {
+            flex-wrap: wrap;
+            
+                .material-pickup-title {
+
+                p {
+                    white-space: nowrap;
+                }
+
+                h3 {
+                    white-space: normal;
+                }
+            }
+
+            .material-pickup-caption {
+                padding: 10px;
+            }
+            
+            .material-pickup-image img {
+                max-width: 500px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 1080px) {
+
+    #food {
+        
+        .food-pickup-title {
+            display: none;
+        }
+
+        [class^="food-contents-special-"] {
+            margin: 50px auto 0;
+            height: auto;
+
+            .food-number {
+                @include MX(none, none, 120px, 250px, 0 auto 20px);
+            }
+
+            
+            .food-pickup-title-responsive {
+                display: block;
+                @include font_control(2.7rem, 1.7, 1px, $gold_color);
+                text-align: center;
+                @include MX(950px, none, 100%);
+                padding: 15px;
+            }
+
+            .food-pickup-desc {
+                @include FLEX(flex, space-around);
+                @include MX(1080px, none, 100%);
+                
+
+
+                .food-pickup-desc-inner {
+                    @include MX(500px, none, 100%, auto, 28px);
+                    //@include font_control(1.6rem, 1.5);
+
+                    dt {
+                        float: none;
+                        margin: 0;
+                        padding: 0 15px 0;
+                        text-align: center;
+                        color: #fff;
+                        background: $main_color;
+
+                        +dd {
+
+                            p {
+                                float: none;
+                                @include MX(900px, none, 100%);
+                                padding: 10px 20px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+
+                .food-pickup-image {
+                    @include MX(480px, 360px, 100%, auto, 0 auto);
+                    position: static;
+                    
+                    img {
+                        @include MX(480px, 360px, 100%, auto, 0 auto);
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

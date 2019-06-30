@@ -1,0 +1,294 @@
+html {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+*{
+	color: white;
+	margin: 0;
+	
+}
+
+
+
+
+header{
+    font-family:"Noto Serif JP", serif;
+}
+
+.section-title {
+    color: #000;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.header-contents-two {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*チェックボックスは非表示*/
+.nav-unshown {
+  display:none;
+}
+
+.rogo{
+	margin: 5px;
+}
+
+.rogo img{
+	height: 73px;
+	width: 215px;
+}
+
+#nav-content{
+	display: flex;
+}
+
+.header-title{
+	background-color: black;
+	font-size: 10px;
+	height: 35px;
+	margin: 40px 0 0;
+	text-align: center;
+    width: 53px;
+    padding: 1px;
+}
+
+/*ヘダー部分　tel＆住所*/
+.header-shop{
+	margin: auto 5px;
+}
+
+/*ヘッダー電話番号*/
+.header-tel{
+	font-size: 24px;
+	text-align: left;
+	font-family:Crimson Text;
+    line-height: 0.8;
+    font-weight: 300;
+    height: 30px;
+}
+
+/*ヘッダーアドレス*/
+.header-add{
+	font-size: 11px;
+	text-align: left;
+    line-height: 0;
+    height: 12px;
+}
+
+
+
+/*#gnav-container{
+	width: 590px;
+	margin: 60px 0 0 25px;
+}
+
+#gnav-ul{
+	list-style: none;
+	display: flex;
+	padding: 2px;
+}
+
+#gnav-ul li{
+	margin: 0 10px;
+	font-size: 15px;
+
+}
+
+#gnav-ul li a{
+	font-family:Crimson Text;
+	text-decoration: none;	
+	padding: 3px;
+}*/
+
+
+/*　↑　ここまでヘッダー/*/
+
+
+
+/*タイトルアクセス画像 　サイズ指定217×317ですが、画像100％にしてます*/
+.access-title{
+	margin: 75px auto 60px;
+    padding-top: 90px;
+}
+
+
+.access-title p{
+	font-size: 43px;
+	color: black;
+	margin: 10px 0 0;
+}
+
+
+/*外観写真からＭＡＰまでくくり*/
+.shop{
+	background:repeating-linear-gradient(-40deg, #1f1b1b 0,  #1f1b1b 7px, #2a2b2d 7px, #2a2b2d 14px);
+}
+
+
+/*外観フレーム*/
+.gaikan{
+	margin:37px auto;
+	background-color: white;
+	width: 475px;
+	height: 300px;
+    position: relative;
+}
+
+
+/*外観写真*/
+.gaikan-img{
+	margin: 11px;
+	width:453px;
+	height:282px;
+    position: relative;
+    z-index: 2;
+}
+
+.ship-img{
+	width: 206px;
+    height: 180px;
+	position: absolute;
+	top: 170px;
+	left: 480px;
+    z-index: 3;
+}
+
+/*電話からＭＡＰくくりＢＯＸ*/
+section{
+	display: flex;
+	justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+/*お店詳細情報くくりＢＯＸ*/
+.info{
+	width: 380px;
+	margin: -20px 11px 0 0;
+}
+
+
+
+/*電話くくりＢＯＸ*/
+.tel{
+	border-top:solid 3px white;
+	border-bottom: solid 3px white;
+	padding: 6px 0;
+	display: flex;
+}
+
+/*電話タイトル*/
+.tel1{
+	font-size: 15px;
+	margin: auto 15px auto  0;
+}
+
+/*電話番号*/
+.tel2{
+	font-size: 30px;
+	font-family:Crimson Text;
+}
+
+
+/*住所*/
+.adress {
+	margin: 12px 0 23px 0;
+	text-align: left;
+}
+
+
+/*ＯＰＮＥ詳細くくりＢＯＸ*/
+.time{
+	display: flex;
+}
+
+/*営業時間くくりＢＯＸ*/
+.hour{
+	vertical-align: top;
+	text-align: left;
+	margin: 0 10px 0 0;
+}
+
+
+/*営業時間見出し*/
+.hour1{
+	font-size: 17px;
+	border-style: solid 1px white;
+	background-color: white;
+	width: 100px;
+	text-align: center;
+	color: black;
+}
+
+/*昼の７営業時間*/
+.hour2{
+	font-size: 15px;
+	margin: 16px 0 0 0;
+}
+
+/*夜の営業時間*/
+.hour3{
+	font-size: 15px;
+	margin: 0;
+}
+
+/*定休日くくりＢＯＸ*/
+.rest{
+	vertical-align: top;
+	text-align: left;
+	margin: 0;
+}
+
+/*定休日見出し*/
+.rest1{
+	font-size: 17px;
+	border-style: solid 1px white;
+	background-color: white;
+	width: 100px;
+	text-align: center;
+	color: black;
+	margin: 0;
+}	
+
+/*定休日詳細*/
+.rest2{
+	font-size: 15px;
+	margin: 16px 0 0 0;
+}	
+
+/*アクセスくくりＢＯＸ*/
+.root{
+ margin: 32px 0 0;
+ text-align: left;
+}
+
+/*アクセス見出し*/
+.root1{
+	margin: 0 0 16px 0;
+	font-size: 17px;
+	border-style: solid 1px white;
+	background-color: white;
+	width: 100px;
+	text-align: center;
+	color: black;
+}
+
+/*アクセス詳細　駅*/
+.root2{
+	font-size: 16px;
+ 	text-align: left;	
+}
+
+
+.map{
+	display: inline-block;
+	width: 500px;
+	height: 373px;
+	margin: 0 0 50px 11px;
+    position: relative;
+    z-index:1;
+}
+
+

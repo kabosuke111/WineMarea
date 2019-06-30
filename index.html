@@ -1,0 +1,1508 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <meta name="robots" content="nofollow, noindex">
+
+<meta http-equiv="x-ua-compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="どなたでも気軽に美味しいイタリア料理を楽しめる、笑顔溢れるトラットリアです。有機野菜たっぷりのアンティパスト、ピッツァ、パスタなど旬の食材を活かしたフードメニューをはじめ、体に優しく美味しいオーガニックワインを常時20種以上。イタリア郷土料理を再構築した、独自の世界観で作る創作料理のお店です。">
+<meta name="keywords" content="飲食店,イタリアン,中野富士見町,イタリアソムリエ協会認定ソムリエ,自然派ワイン,イタリア食堂,イタリア郷土料理,イタリア創作料理">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/animsition.min.css">
+<link href="css/lity.min.css" rel="stylesheet">
+<link href="css/slidebars.min.css" rel="stylesheet">
+<link href="css/hamburger.css" rel="stylesheet">
+
+<link rel="icon" href="images/favicon.gif">
+<link rel="apple-touch-icon-precomposed" href="images/phone_icon.png">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+<title>ワイン食堂 MAREA</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/inview.min.js"></script>
+<script>
+    var activeImageNum = 0;
+    var a = [1,2,3,4,5,6];
+    
+    function activeImage() {
+        var active = document.getElementById("activeImage"+activeImageNum);
+        active.classList.add("materialImageActive");
+        $("#materialSmallTitle"+activeImageNum).fadeOut();
+    }
+    
+    /*function activeImageLeft2() {
+        var active = document.getElementById("activeImage2");
+        active.classList.add("materialImageActiveLeft");
+        $("#materialSmallTitle2").fadeToggle();
+    }
+    
+    function activeImageRight3() {
+        var active = document.getElementById("activeImage3");
+        active.classList.add("materialImageActiveRight");
+        $("#materialSmallTitle3").fadeToggle();
+    }
+    
+    function activeImageLeft4() {
+        var active = document.getElementById("activeImage4");
+        active.classList.add("materialImageActiveLeft");
+        $("#materialSmallTitle4").fadeToggle();
+    }
+    
+    function activeImageRight5() {
+        var active = document.getElementById("activeImage5");
+        active.classList.add("materialImageActiveRight");
+        $("#materialSmallTitle5").fadeToggle();
+    }
+    
+    function activeImageLeft6() {
+        var active = document.getElementById("activeImage6");
+        active.classList.add("materialImageActiveLeft");
+        $("#materialSmallTitle6").fadeToggle();
+    }*/
+    
+    function imageOut() {
+        var active = document.getElementById("activeImage"+activeImageNum);
+        active.classList.remove("materialImageActive");
+        $("#materialSmallTitle"+activeImageNum).fadeIn();
+        $("#materialSmallTitle"+activeImageNum).css({
+            "display":"block"
+        });
+    }
+    /*
+    function imageOut2() {
+        var active = document.getElementById("activeImage2");
+        active.classList.remove("materialImageActiveLeft");
+        $("#materialSmallTitle2").fadeToggle();
+        $("#materialSmallTitle2").css({
+            "display":"block"
+        });
+    }
+    
+    function imageOut3() {
+        var active = document.getElementById("activeImage3");
+        active.classList.remove("materialImageActiveRight");
+        $("#materialSmallTitle3").fadeToggle();
+        $("#materialSmallTitle3").css({
+            "display":"block"
+        });
+    }
+    
+    function imageOut4() {
+        var active = document.getElementById("activeImage4");
+        active.classList.remove("materialImageActiveLeft");
+        $("#materialSmallTitle4").fadeToggle();
+        $("#materialSmallTitle4").css({
+            "display":"block"
+        });
+    }
+    
+    function imageOut5() {
+        var active = document.getElementById("activeImage5");
+        active.classList.remove("materialImageActiveRight");
+        $("#materialSmallTitle5").fadeToggle();
+        $("#materialSmallTitle5").css({
+            "display":"block"
+        });
+    }
+    
+    function imageOut6() {
+        var active = document.getElementById("activeImage6");
+        active.classList.remove("materialImageActiveLeft");
+        $("#materialSmallTitle6").fadeToggle();
+        $("#materialSmallTitle6").css({
+            "display":"block"
+        });
+    }*/
+
+    
+    
+    
+</script>
+</head>
+<body>
+<div id="wrapper" class="animsition" data-animsition-in-class="fade-in-left"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out-left"
+  data-animsition-out-duration="800">
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                    サイト全体のヘッダー
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+	<header id="header">
+        <div class="header-contents-wrap">
+    		<div class="header-contents-one">
+                <a class="maintitle animsition-link" href="index.html" data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="600"><img src="images/title_head.svg" alt="ワイン食堂 MAREA マレーア" width="215"></a>
+            </div>
+            <div class="header-contents-two">
+    			<p>ご予約・<br>お問合せ</p>
+                <address class="header-address">
+	        		<p>050-3469-3174</p>
+                    <p>〒166-0012 東京都杉並区和田1-17-17</p>
+                </address>
+    		</div>
+    		<nav class="global-nav clearfix">
+                <div class="sb-toggle-left menu-button"><!--スマフォ・タブレット画面で表示-->
+                    <!--<div class="hamburger"><span>Open menu</span></div>-->
+                    
+                    <div class="responsive-globalmenu">
+                      <a id="responsive-globalmenu-button" class="hamburger" href="#">
+                        <div class="hamburger-inner"></div>
+                      </a>  
+                    </div>
+                    
+                    <!--<div class="header__menu">
+                      <a id="header__button" class="hamburger" href="#">
+                        <div class="hamburger__inner"></div>
+                      </a>  
+                    </div>-->
+                </div>
+                
+    			<ul class="global-nav-ul">
+    				<li><a href="#home">Home</a></li>
+    				<li><a href="#material">Material</a></li>
+    				<li><a href="#wine">Wine</a></li>
+    				<li><a href="#food">Food</a></li>
+    				<li><a href="#drink">Drink</a></li>
+    				<li><a href="#party">Party</a></li>
+    				<!--<li><a href="#gallery">Gallery</a></li>-->
+    				<li><a href="access.html" class="animsition-link" data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="600">Access</a></li>
+    			</ul>
+    		</nav>
+        </div>
+	</header>
+    
+<!--
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+***************************************************************************************************************
+
+
+                                                    メイン記事
+
+
+***************************************************************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+	<main id="main">
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        ホーム
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+        <header class="home-header">
+            <figure class="header-images">
+                <ul class="slidbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </figure>
+            <h1 id="page-title"><img src="images/home_title.svg" alt="ワイン食堂 マレーア MAREA" width="215"></h1>
+            <aside class="mousewheel">
+                <div class="mouseback">
+                    <p class="mouse mousesub">scroll</p>
+                </div>
+            </aside>
+        </header>    
+        
+        <article id="home">
+            <h2></h2>
+			<section class="home-contents-one">
+                <div class="inner">
+		            <p class="home-sub-caption">１２年間イタリアで暮らしたソムリエ資格を持つシェフの、創造性に富んだイタリア料理と自然派中心のワインをお楽しみください。</p>
+                    <p class="home-sub">赤い看板が目印の、イタリア郷土料理をベースとした創作料理のお店です。シェフが現地で体験してきた、お客様とスタッフの距離が近いイタリア食堂の雰囲気を可能な限り再現。ゆったりとしたちょっと贅沢な食事が、5000円前後という手の届く範囲でお楽しみいただけます。<br>宴会もよし、ご家族やママさん同士でお気軽に楽しむもよし、サラリーマンさんの終業後のちょっとしたお楽しみにするのもよし。立ち飲みスペースもあるので、気軽にふらっとお立ち寄りいただいて１杯というのでもOK。<br>数十種類の自然派ワインと、毎月変わる旬の食材を是非ともお楽しみくださいませ。</p>
+                </div>
+			</section>
+            <section class="home-contents-three">
+                <h3 class="contents-title">お客様とスタッフで作り上げる、本場イタリアさながらの食堂。</h3>
+                <div class="home-contents-three-inner">
+                    <p class="home-service">イタリアでは、サービス側もお客様も対等な関係。アットホームな街の食堂を目指し、かしこまった接客はいたしません。食べたいメニューや味わいたいお酒など、遠慮なくスタッフにご相談ください。ワイン食堂MAREAはお客様と共に作り上げるお店です。</p>
+                    <img class="home-contents-service-image" src="images/home_image_chef.jpg" srcset="images/2x/home_image_chef@2x.jpg 2x" alt="なんでもご相談くださいませ">
+                </div>
+            </section>
+            <aside class="side-contents">
+                <img src="images/smile_restaurant.jpg" alt="みんな笑顔のお店です">
+                <p>お客様と個性的なスタッフで作る、笑顔の絶えない癒しの食堂へお越しくださいませ。</p>                
+            </aside>
+            
+		</article>
+		
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        マテリアル
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		<article id="material">
+            <header class="material-article-header">
+                <figure class="header-image material">
+                    <img src="images/header_material.png" srcset="images/2x/header_material@2x.png 2x" alt="素材へのこだわり" width="100%" draggable="false">
+                </figure>
+                <h2 class="section-title">素材へのこだわり</h2>
+                <p class="sub">「安全で美味しいお食事とお飲み物を、心ゆくまで楽しんで頂きたい」 <br>MAREAでは、高品質で安全な食材を素材から厳選し、メニュー開発を行っています。</p>
+            </header>
+            <section class="material-contents-pickup">
+                <div class="material-pickup-title">
+                    <p>Cibo delizioso</p>
+                    <h3>今月の<br>こだわり<br>食材</h3>
+                </div>
+                <div class="material-pickup-image">
+                    <img src="images/material_pickup_image.jpg" srcset="images/2x/material_pickup_image@2x.jpg" alt="「太東/大原産真蛸」">
+                </div>
+                <div class="material-pickup-caption">
+                    <dl>
+                        <dt><p>千葉県いすみ市</p>
+                        <p>「太東/大原産真蛸」</p></dt>
+                        <dd>ブランド蛸だとまっさきに明石の名前があがりますが、実は明石と並んで称されるブランド蛸。旨味、甘みはほかの蛸とは一線を画し、さらに最適の火入れを施すことによって、ほどよい歯ごたえもある。</dd>
+                        <dd><a class="material-inner-link" href="http://www.isumi-kankou.com/isumi-kanko-tousyu/tako.html">詳しい情報はこちら</a></dd>
+                    </dl>
+                </div>
+                
+            </section>
+			<section class="material-contents-one">
+                <ul class="material-main">
+                    <li id="materialList1" class="material-list">
+                        <p id="materialSmallTitle1" class="small-title">テイクアウト販売</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[0];imageOut()" onclick="activeImageNum = a[0];imageOut()">MAREAではテイクアウト（お持ち帰り）にもご対応しております。<br>
+                        特に『９種の選べるアンティパスト』のテイクアウトは、 オフィスでのランチやご自宅のお食事用としても、ご利用いただいております。（アンティパスト100g 450円　プロシュート除く）<br>
+                        またピッツァやチーズなどもテイクアウトでお楽しみいただけます。事前にお電話をいただき、ご用意しておくことも可能です。</p>
+                        <img id="activeImage1" class="material-list-image" src="images/material_image_takeout.jpg" srcset="images/2x/material_image_takeout@2x.jpg 2x" alt="テイクアウト販売" onclick="activeImageNum = a[0];activeImage()">
+                    </li>
+                    <li class="material-list">
+                        <p id="materialSmallTitle2" class="small-title">オーガニック（有機）野菜</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[1];imageOut()" onclick="activeImageNum = a[1];imageOut()">有機野菜とは、2年以上農薬や化学肥料が使用されていない田畑で、それらを使わずに栽培された野菜のこと。<br>
+                        遺伝子組み換え技術も使用しておりません。完全有機農法で大切に育てられたオーガニック(有機)野菜は、那須高原の契約農家さんから定期的に直送されます。<br>
+                        毎日毎日、真摯に野菜作りに励んでいるこの農家さんは、図鑑でも見かけない希少な野菜作りにも貪欲にチャレンジし、150種以上もの野菜を栽培しています。<br>
+                        MAREAでは、その時期に収穫された新鮮な野菜を厳選し、サラダやパスタ、お薦めメニュー等でご提供しています。<br>
+                        栄養価が高く、シャリっと美味しい旬の有機野菜はとってもヘルシー。ちょっと珍しい野菜を使用した季節変わりメニューや定番季節のサラダ等で、たっぷりとお楽しみ下さい。</p>
+                        <img id="activeImage2" class="material-list-image" src="images/material_image_vegi.jpg" srcset="images/2x/material_image_vegi@2x.jpg 2x" alt="有機野菜" onclick="activeImageNum = a[1];activeImage()">
+                    </li>
+                    <li class="material-list">
+                        <p id="materialSmallTitle3" class="small-title">オーガニックワイン</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[2];imageOut()" onclick="activeImageNum = a[2];imageOut()">世界各国から直輸入ルートを持つ関連会社の協力により、 美味しく希少性の高いオーガニックワイン（ビオワイン等）を厳選して豊  富に取り揃えております。<br>
+                        イタリア産を中心に、フランス・スペインなど各地の豊かな自然の恵みと味わいを、どうぞお気軽にごゆっくりとお楽しみください。<br>
+                        グラス、カラフェもご用意しております。ワイン好きオーナーのメッセージが詰まった『特製ワインブック』よりお選びください。</p>
+                        <img id="activeImage3" class="material-list-image" src="images/material_image_wine.jpg" srcset="images/2x/material_image_wine@2x.jpg 2x" alt="オーガニックワイン" onclick="activeImageNum = a[2];activeImage()">
+                    </li>
+                    <li class="material-list">
+                        <p id="materialSmallTitle4" class="small-title">トマトジュース</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[3];imageOut()" onclick="activeImageNum = a[3];imageOut()">トマトジュース これはまさに『飲むトマトサラダ』！<br>
+                        有機栽培トマトをふんだんに使用し、塩さえも加えない贅沢な味です。<br>
+                        実はこのトマトジュース、北海道で有機農家を営むシェフの叔父さんによる渾身の作なのです。<br>
+                        毎年夏、たわわに実った真っ赤なトマトを大切に収穫し、実を細かく刻んで、煮た後に丁寧に漉したもの。だから味も栄養も、トマトそのもの！一般に流通しているトマトジュースとは全くの別物です。<br>
+                        そのままでももちろん、テキーラ・ウォッカ・ビールなどで割るのもお薦めです。<br>
+                        「トマトジュースってこんなに美味しかったんだ！」と感動していただけること間違いなしの逸品です。</p>
+                        <img id="activeImage4" class="material-list-image" src="images/material_image_tomato.jpg" srcset="images/2x/material_image_tomato@2x.jpg 2x" alt="トマトジュース" onclick="activeImageNum = a[3];activeImage()">
+                    </li>
+                    <li class="material-list">
+                        <p id="materialSmallTitle5" class="small-title">100%オーガニックフルーツジュース</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[4];imageOut()" onclick="activeImageNum = a[4];imageOut()">100%オーガニックフルーツジュース アルコールが苦手な方や今日はちょっと…というとき、またお子様方も楽しめる、 体に優しくてとびきり美味しいお飲物として、オーガニックのフルーツジュースをご用意しています。 <br>
+                        無農薬・無添加で、もちろん美味しさにもこだわりました。 北海道産のグレープジュースや愛媛産の温州みかんジュースなど、 バリエーションをお楽しみください。</p>
+                        <img id="activeImage5" class="material-list-image" src="images/material_image_juice.jpg" srcset="images/2x/material_image_juice@2x.jpg 2x" alt="100%オーガニックフルーツジュース" onclick="activeImageNum = a[4];activeImage()">
+                    </li>
+                    <li class="material-list">
+                        <p id="materialSmallTitle6" class="small-title">特製ハーブスパイス・ソルト</p>
+                        <p class="material-list-sub" onmouseout="activeImageNum = a[5];imageOut()" onclick="activeImageNum = a[5];imageOut()">ヨーロッパに在住していたオーナーが、現地で口にしたとあるハーブスパイス。その味をイタリア中捜し求め、やっとのことで手に入れたのが、日本ではMAREAにしかないオリジナルハーブスパイス『ブルスケッタ』！<br>
+                        何十種類ものドライハーブを絶妙なバランスでミックスしたこのスパイスは、オリーブオイルに混ぜても、そのままサラダやピザに乗せてもOK! 仄かにピリッとパンチがある大人の味で、ヤミツキになる美味しさ!<br>
+                        またご要望でテーブルにお持ちしております『ジュラシックソルト』は、アメリカユタ州の地層から採れる天然岩塩。ミネラル豊富でちょっと甘め、食材そのものの味をしっかりと引き出します。新鮮なサラダにさっと振りかけて、ぜひご賞味ください。（これらは店頭でも販売しております）</p>
+                        <img id="activeImage6" class="material-list-image" src="images/material_image_salt.jpg" srcset="images/2x/material_image_salt@2x.jpg 2x" alt="特製ハーブスパイスソルト" onclick="activeImageNum = a[5];activeImage()">
+                    </li>
+				</ul>
+			</section>	
+		</article>
+		
+
+        
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        ワイン
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		<article id="wine">
+			<header class="wine-article-header">
+                <figure class="header-image wine">
+                    <img src="images/header_wine.png" srcset="images/2x/header_wine@2x.png 2x" alt="ソムリエがお勧めするワイン" width="100%" draggable="false">
+                </figure>
+                <h2 class="section-title">ソムリエがお勧めするワイン</h2>
+                <p class="sub">自然の恵みがギュっと詰まったオーガニックワインは、余計な添加物を含まないため、二日酔いや悪酔いをしにくいと言われています。<br>本物のワインの味わいを心ゆくまでご堪能ください。</p>
+            </header>
+            <section class="wine-contents-one">
+                <h3></h3>
+                <figure class="article-image">
+                    <img src="images/wine_image.png" srcset="images/2x/wine_image@2x.png 2x" alt="オーガニックワイン"><!--レスポンシブの場合.header-wrapにbackgroundで設定-->
+                </figure>
+                <div class="wine-caption-contents-inner">
+                    <div class="header-wrap">
+                        <p class="article-maintitle">自然派ワインが常時10種類以上。
+                        スタッフと相談しながら、お気に入りの１本を。</p>
+                        <p class="article-mainsub">MAREAでは、体に優しく安全な『オーガニックワイン』を豊富な種類からお楽しみいただけます。イタリアの自然派ワインを中心に、グラスワインは常時１０種類以上をお楽しみいただけます。スタッフと相談しながら、お気に入りの１本をどうぞ！</p>
+                    </div>
+                    <dl class="aboutwine clearfix">
+                        <dt>オーガニックワインとは？</dt>
+                        <dd>厳密なオーガニック認証ルールに従い製造されたワイン。有機栽培のぶどうを自然発酵させたもので、一般に醸造過程で添加される香料・着色料・漂白剤・合成酵素・合成保存料等の使用は禁止されています。生産農家が心を込めて育て上げたワインは、厳格な温度管理・品質管理のもと、日本まで大切に届けられるのです。</dd>
+                        <dd><img src="images/wine_image2.png" srcset="images/2x/wine_image2@2x.png 2x" alt="オーガニックワイン"></dd>
+                    </dl>
+		    	</div>	
+            </section>
+            
+            <!--|||||||||||||||||||||||||||||| ワインのメニュー（背景ブラックとグレーストライプ[注] なくなった） ||||||||||||||||||||||||||||||-->
+            <section class="wine-contents-two">
+                <h3></h3>
+                <div class="wine-price">
+                    <div class="wine-price-inner">
+                        <p class="wine-price-glass">
+                            グラスは常時10種類以上<br><span>&yen;700&nbsp;&frasl;&nbsp;&yen;900&nbsp;&frasl;&nbsp;&yen;1,100</span>
+                        </p>
+                        <p class="wine-price-bottle">
+                            ボトルは常時50種類以上<br><span>&yen;3,800&nbsp;&frasl;&nbsp;&yen;4,800&nbsp;&frasl;&nbsp;&yen;5,800</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="contents-title-sub">食べて飲んで1人5,000円〜という価格帯では、他には負けない食事とワインの質。<br>
+                ワインリストは頻繁に変わります。お越しいただくたびに前と違うワインをお楽しみいただけます。<br>
+                スタッフと話しながら、最高の一杯をどうぞ。</p>
+            </section>
+            
+            <!--ワインにぴったりの料理をピックアップ-->
+            <section class="wine-contents-three">
+                <h3>イタリア料理にぴったりのワインをピックアップ</h3>
+                <button class="pickup-button">PICK UP</button>
+                <ul class="pickupul">
+                    <li class="pickup">
+                        <p class="pickup-num">1</p>
+                        <figure class="pickup-images">
+                            <img src="images/winesample.png" srcset="images/2x/winesample@2x.png 2x" alt="">
+                            <img src="images/sample.png" srcset="images/2x/sample@2x.png 2x" alt="">
+                        </figure>
+                        <p class="pickup-title">パルマ産プロシュート　＋　ネルソン アドミラル</p>
+                        <p class="pickup-sub">こだわり生ハムで作られたパルマ産プロシュートには、ネルソンアドミラルがお勧め。重厚であり爽やかな味わいが、生ハムの塩を引き立て絶妙な塩っぱさを引き出します。</p>
+                    </li>
+                    <li class="pickup">
+                        <p class="pickup-num">2</p>
+                        <figure class="pickup-images">
+                            <img src="images/winesample.png" srcset="images/2x/winesample@2x.png 2x" alt="">
+                            <img src="images/sample.png" srcset="images/2x/sample@2x.png 2x" alt="">
+                        </figure>
+                        <p class="pickup-title">パルマ産プロシュート　＋　ネルソン アドミラル</p>
+                        <p class="pickup-sub">こだわり生ハムで作られたパルマ産プロシュートには、ネルソンアドミラルがお勧め。重厚であり爽やかな味わいが、生ハムの塩を引き立て絶妙な塩っぱさを引き出します。</p>
+                    </li>
+                    <li class="pickup">
+                        <p class="pickup-num">3</p>
+                        <figure class="pickup-images">
+                            <img src="images/winesample.png" srcset="images/2x/winesample@2x.png 2x" alt="">
+                            <img src="images/sample.png" srcset="images/2x/sample@2x.png 2x" alt="">
+                        </figure>
+                        <p class="pickup-title">パルマ産プロシュート　＋　ネルソン アドミラル</p>
+                        <p class="pickup-sub">こだわり生ハムで作られたパルマ産プロシュートには、ネルソンアドミラルがお勧め。重厚であり爽やかな味わいが、生ハムの塩を引き立て絶妙な塩っぱさを引き出します。</p>
+                    </li>
+                    <li class="pickup">
+                        <p class="pickup-num">4</p>
+                        <figure class="pickup-images">
+                            <img src="images/winesample.png" srcset="images/2x/winesample@2x.png 2x" alt="">
+                            <img src="images/sample.png" srcset="images/2x/sample@2x.png 2x" alt="">
+                        </figure>
+                        <p class="pickup-title">パルマ産プロシュート　＋　ネルソン アドミラル</p>
+                        <p class="pickup-sub">こだわり生ハムで作られたパルマ産プロシュートには、ネルソンアドミラルがお勧め。重厚であり爽やかな味わいが、生ハムの塩を引き立て絶妙な塩っぱさを引き出します。</p>
+                    </li>
+                    
+                </ul>
+            </section>
+		</article>
+		
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        メニュー
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		<article id="food">
+            <header class="food-article-header">
+                <figure class="header-image food">
+                    <img src="images/header_food.png" srcset="images/2x/header_food@2x.png 2x" alt="本格イタリア料理" width="100%" draggable="false">
+                </figure>
+                <h2 class="section-title">本格イタリア料理</h2>
+                <p class="sub">イタリアで１２年間修行したシェフが作る、イタリア郷土料理を再構築した創作料理。<br>定番メニューを除き、その日に入る食材によってメニューは頻繁に変わるので、毎回新しい発見に驚かされますよ。</p>
+            </header>
+			<section class="food-contents-one">
+                <h3></h3>
+                <div class="food-contents-flex">
+                    <div class="food-caption-contents-inner">
+                        <div class="header-wrap">
+                            <p class="article-maintitle">12年間イタリアで暮らしたシェフが創造性に富んだイタリア料理を作ります。</p>
+                            <p class="article-mainsub">定番を除き、メニューは月毎に変わるので旬の食材をお楽しみいただけます。</p>    
+                        </div>
+                        <figure class="foodimage-one">
+                            <img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt="赤いイタリアンパスタ">
+                            <img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt="美味しいシーフード">
+                            <img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt="美味しいえびフード">
+                        </figure>
+                    </div>
+                    <figure class="article-image">
+                        <img src="images/food_image.png" srcset="images/2x/food_image@2x.png 2x" alt="イタリアンシェフ"><!--レスポンシブの場合.header-wrapにbackgroundで設定-->
+                    </figure>
+                </div>
+			</section>
+            <section class="food-chef-contents">
+                <h3>シェフデータ</h3>
+                <figure class="food-chef-figure">
+                    <img class="food-chef-images" src="images/chef.jpg" srcset="images/2x/chef@2x.jpg 2x" alt="">
+                    <figcaption>私は、町の食堂の店主でありたい</figcaption>
+                </figure>
+
+                <div class="food-chef-date">
+                    <div class="date1">
+                        <p class="food-chef-name"><ruby><rb>半田 雄大</rb><rp>（</rp><rt>はんだたけひろ</rt><rp>）</rp></ruby></p>
+                        <p>1980年８月6日 東京生まれ</p>
+                        <p>料理人歴　18年</p>
+                    </div>
+                    <div class="date2">
+                        <p><a href="www.enotecalebarrique.com/">Enoteca Le Barrique（フィレンツェ）</a>でシェフとして７年<br>
+                        <a href="https://www.fingersrestaurants.com/">Fingers Garden（ミラノ）</a>で2年<br>
+                        その他、バール、魚介専門店、和食店等、ミラノでは様々な業態のレストランで働き、フランス（パリ）でも半年間働く機会を得た。</p>
+                        <p>食べることと作ることがとにかく好きだった。それは今でも変わらず、料理と食べることは趣味のようなもの</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!--|||||||||||||||||||||||||||||| これだけは食べて欲しいメニュー ||||||||||||||||||||||||||||||-->
+            <section class="food-contents-special">
+                <h3></h3>
+                
+                <section class="food-contents-special-number1">
+                    <h4 class="food-number">これだけは<br>食べて欲しいおすすめ<br><span class="food-number-wrap"><span class="food-numberA">No.</span><span class="food-numberB">1</span></span></h4>
+                    <dl class="food-pickup">
+                        <dt class="food-pickup-title"><p>今一番美味しい野菜と</p><p>牛生ハムのシーザー</p><p>サラダ</p></dt>
+                        <dt class="food-pickup-title-responsive"><p>今一番美味しい野菜と牛生ハムのシーザーサラダ</p></dt>
+                        <dd class="food-pickup-desc">
+                            <div class="food-pickup-image number1">
+                                <img src="images/food_pickup1.jpg" srcset="images/2x/food_pickup1@2x.jpg 2x" alt="今一番美味しい野菜と牛生ハムのシーザーサラダ">
+                            </div>
+                            <dl class="food-pickup-desc-inner">
+                                <dt class="food-pickup-material">素材</dt>
+                                <dd class="clearfix">
+                                    <p>農家直送の野菜を5種類以上盛り込むイタリアの「カルネ サラータ」と呼ばれる牛塩漬け肉の製法で作った自家製生ハムを使用シーザーサラダというメニュ名とお皿が運ばれてきた時のギャップがある盛り付けと味わい</p>
+                                </dd>
+                                <dt class="food-pickup-cooking">調理方法</dt>
+                                <dd class="clearfix">
+                                    <p>野菜は、塩もみ、ロースト、低温蒸し等、野菜の魅力を最大限に引き出す調理を施している。</p>
+                                </dd>
+                                <dt class="food-pickup-material">味わい</dt>
+                                <dd class="clearfix">
+                                    <p>ドレッシングは、マヨネーズ、アンチョビ、チーズにヨーグルトも加えコクがあり軽やか味わい</p>
+                                </dd>
+                            </dl>
+                            
+                        </dd>
+                        
+                    </dl>
+                </section>
+                <section class="food-contents-special-number2">
+                    <h4 class="food-number">これだけは<br>食べて欲しいおすすめ<br><span class="food-number-wrap"><span class="food-numberA">No.</span><span class="food-numberB">2</span></span></h4>
+                    <dl class="food-pickup">
+                        <dt class="food-pickup-title"><p>千葉県いすみの真ダコと</p><p>オリーブ</p></dt>
+                        <dt class="food-pickup-title-responsive"><p>千葉県いすみの真ダコとオリーブ</p></dt>
+                        <dd class="food-pickup-desc">
+                            <div class="food-pickup-image number2">
+                                <img src="images/food_pickup2.jpg" srcset="images/2x/food_pickup2@2x.jpg 2x" alt="千葉県いすみ市より届く「太東・大原産の真ダコ」">
+                            </div>
+                            <dl class="food-pickup-desc-inner">
+                                <dt class="food-pickup-material">素材</dt>
+                                <dd class="clearfix">
+                                    <p>千葉県いすみ市より届く「太東・大原産の真ダコ」<br>
+                                        <a class="material-inner-link" href="http://www.isumi-kankou.com/isumi-kanko-tousyu/tako.html">詳しい情報はこちら</a>
+                                        </p>
+                                </dd>
+                                <dt class="food-pickup-cooking">調理方法</dt>
+                                <dd class="clearfix">
+                                    <p>65度で２時間ゆっくりと火入れすることによって、旨味をのがさずしっとりと仕上がる<br>オリーブは、フレッシュと乾燥させてパウダー状にしたものをあしらい、味のアクセントにする</p>
+                                </dd>
+                            </dl>
+                            
+                        </dd>
+                    </dl>
+                </section>
+                <section class="food-contents-special-number3">
+                    <h4 class="food-number">これだけは<br>食べて欲しいおすすめ<br><span class="food-number-wrap"><span class="food-numberA">No.</span><span class="food-numberB">3</span></span></h4>
+                    <dl class="food-pickup">
+                        <dt class="food-pickup-title"><p>牛ホホ肉の“ペポーゾ”</p><p>赤ワインと</p><p>黒コショウ煮込み</p></dt>
+                        <dt class="food-pickup-title-responsive"><p>牛ホホ肉の“ペポーゾ”<br>(赤ワインと黒コショウ煮込み)</p></dt>
+                        <dd class="food-pickup-desc">
+                            <div class="food-pickup-image number3">
+                                <img src="images/food_pickup3.jpg" srcset="images/2x/food_pickup3@2x.jpg 2x" alt="牛ホホ肉の“ペポーゾ”（赤ワインと黒コショウ煮込み）">
+                            </div>
+                            <dl class="food-pickup-desc-inner">
+                                <dt class="food-pickup-material">素材</dt>
+                                <dd class="clearfix">
+                                    <p>トスカーナの伝統料理。私が現地で食べて一番印象に残った煮込み料理です。本場の味付けよりは抑えているが、黒コショウの辛みがアクセントとなっています。ホホ肉は赤ワインとトマト、少量の香味野菜のみで煮込み、牛肉の旨味をシンプルにひきだす。</p>
+                                </dd>
+                            </dl>
+                            
+                        </dd>
+                    </dl>
+                </section>
+            </section>
+            
+・
+            <!--|||||||||||||||||||||||||||||| ランチメニュー ||||||||||||||||||||||||||||||-->
+            <section class="food-contents-two">
+                <h3>Lunch</h3>
+                <ul class="menu-day">
+                    <li>平日</li>
+                    <li>共通</li>
+                    <li>土日祝日</li>
+                </ul>
+                <div class="lunch-menu-wrap weekday">
+                    <ul class="lunch-list">
+                        <li><p><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><span>anti pasta</span></p></li>
+                        <li><p><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><span>anti pasta</span></p></li>
+                        <li><p><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><span>anti pasta</span></p></li>
+                        <li><p><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><span>anti pasta</span></p></li>
+                        <li><p><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><span>anti pasta</span></p></li>
+                    </ul>
+
+                    <!--|||||||||||||||||||||||||||||| ランチ詳細メニュー ||||||||||||||||||||||||||||||-->
+                    <section class="foodmenu-details antipasta-freddo">
+                        <h4>[&nbsp;Antipasta Freddo&nbsp;]</h4>
+                        <ul class="lunch-menulist antipasta-freddo">
+                            <!--ランチメニュー1品目-->
+                            <li class="foodmenu1 list-layer1">
+                                <dl class="list-layer2">
+                                    <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                    <dt>キノコのマリネ</dt>
+                                    <dt>Fungi Marinade</dt>
+                                    <dd>450</dd>
+                                    <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    
+                </div>
+            </section>
+                
+            <!--|||||||||||||||||||||||||||||| ディナーメニュー ||||||||||||||||||||||||||||||-->
+            <section class="food-contents-three">
+                <h3>Dinner</h3>
+                <ul class="dinner-list">
+                    <li>
+                        <img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="">
+                        <p>Antipasto</p>
+                    </li>
+                    <li>
+                        <img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="">
+                        <p>Insalata</p>
+                    </li>
+                    <li>
+                        <img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="">
+                        <p>Pizza</p>
+                    </li>
+                </ul>
+                
+                <!--|||||||||||||||||||||||||||||| ディナー詳細メニュー ||||||||||||||||||||||||||||||-->
+                
+                <!--******************* 小ジャンル１　*******************-->
+                <section class="foodmenu-details food-dinner">
+                    <h4>Antipasto</h4>
+                    <ul class="dinner-menulist antipasto">
+                        <!--ディナーメニュー1品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー2品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー3品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー4品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー5品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー6品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!--******************* 小ジャンル２　*******************-->
+                <section class="foodmenu-details food-dinner">
+                    <h4>Insalata</h4>
+                    <ul class="dinner-menulist insalata">
+                        <!--ディナーメニュー1品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー2品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー3品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー4品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー5品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー6品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!--******************* 小ジャンル３　*******************-->
+                <section class="foodmenu-details food-dinner">
+                    <h4>Pizza</h4>
+                    <ul class="dinner-menulist pizza">
+                        <!--ディナーメニュー1品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー2品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー3品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー4品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu1.png" srcset="images/2x/menu1@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー5品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu2.png" srcset="images/2x/menu2@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ディナーメニュー6品目-->
+                        <li class="foodmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt><img src="images/menu3.png" srcset="images/2x/menu3@2x.png 2x" alt=""></dt>
+                                <dt>キノコのマリネ</dt>
+                                <dt>Fungi Marinade</dt>
+                                <dd>450</dd>
+                                <dd>様々なキノコの美味しさを楽しめる贅沢マリネ。</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            
+            <!--|||||||||||||||||||||||||||||||||||||||||||||| メニューここまで ||||||||||||||||||||||||||||||||||||||||||||||-->
+		</article>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        ドリンク
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		
+		<article id="drink">
+            <header class="drink-header">
+                <figure class="header-image drink">
+                    <img src="images/header_drink.png" srcset="images/2x/header_drink@2x.png 2x" alt="ドリンク" width="100%" draggable="false">
+                </figure>
+                <h2 class="section-title">ドリンク</h2>
+                <p class="sub">イタリアン産オーガニックワインのほか、 イタリアの老舗ビールメーカーや人気№１ビール等を豊富に取り揃えています。<br>タップマルシエを導入しているので、旬のクラフト生ビールが４種類飲めます。<br>ソフトドリンクでは有機トマト100％ジュースをはじめ、天然ぶどう、ブラッド オレンジの 100％ジュースがヘルシーで<br>美味しいと評判です！  オーガニックコーヒー・紅茶等各種ご用意しております。お酒がお好きな方もヘルシー志向の方も、<br>めいめいお好きなお飲物で、ごゆっくりとお過ごしいただけます。</p>
+            </header>
+			<section class="drink-contents-one">
+                <ul class="drink-list">
+                    <li>
+                        <img id="1" class="tab-li now drink-button" src="images/drink_juice.svg" alt="ソフトドリンク">
+                        <img id="1" class="tab-li now drink-button-phone" src="images/drink_juice_icon.svg" alt="ソフトドリンク">
+                        <p class="drink-genre">Bevanda</p>
+                    </li>
+                    <li>
+                        <img id="2" class="tab-li nochoice drink-button" src="images/drink_beer.svg" alt="ビール">
+                        <img id="2" class="tab-li nochoice drink-button-phone" src="images/drink_beer_icon.svg" alt="ビール">
+                        <p class="drink-genre">Birra</p>
+                    </li>
+                    <li>
+                        <img id="3" class="tab-li nochoice drink-button" src="images/drink_cafe.svg" alt="コーヒーとお茶">
+                        <img id="3" class="tab-li nochoice drink-button-phone" src="images/drink_cafe_icon.svg" alt="コーヒーとお茶">
+                        <p class="drink-genre">Cafe &amp; Tea</p>
+                    </li>
+                </ul>
+                
+                <!--|||||||||||||||||||||||||||||| ドリンク詳細メニュー ||||||||||||||||||||||||||||||-->
+                
+                <!--ソフトドリンク-->
+                <section class="tab-arti tab1 show drinkmenu-details drink-softdrink">
+                    <h4 class="drink-smalltitle-Ita">Bevanda</h4>
+                    <p class="drink-smalltitle-JP">&#091;&nbsp;&nbsp;ソフトドリンク・ジュース&nbsp;&nbsp;&#093;</p>
+                    <ul class="drink-menulist softdrink">
+                        
+                        <!--ドリンクメニュー1品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/orange_thumb.jpg" srcset="images/drink/2x/orange_thumb@2x.jpg 2x" alt="オレンジジュース">
+                                    </a>
+                                </dt>
+                                <dt>オレンジジュース<br>（果汁100%）</dt>
+                                <dd>400</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー2品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/bloodorange.jpg" data-lity>
+                                        <img src="images/drink/bloodorange_thumb.jpg" srcset="images/drink/2x/bloodorange_thumb@2x.jpg 2x" alt="ブラッドオレンジジュース">
+                                    </a>
+                                </dt>
+                                <dt>ブラッドオレンジジュース<br>（果汁100%）</dt>
+                                <dd>600</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー3品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/grape.jpg" data-lity>
+                                        <img src="images/drink/grape_thumb.jpg" srcset="images/drink/2x/grape_thumb@2x.jpg 2x" alt="ぶどうジュース">
+                                    </a>
+                                </dt>
+                                <dt>ぶどうジュース<br>（果汁100%）</dt>
+                                <dd>600</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー4品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/ale.jpg" data-lity>
+                                        <img src="images/drink/ale_thumb.jpg" srcset="images/drink/2x/ale_thumb@2x.jpg 2x" alt="ウィルキンソンジンジャーエール">
+                                    </a>
+                                </dt>
+                                <dt>ウィルキンソン<br>ジンジャーエール</dt>
+                                <dd>500</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー5品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/water.jpg" data-lity>
+                                        <img src="images/drink/water_thumb.jpg" srcset="images/drink/2x/water_thumb@2x.jpg 2x" alt="スルジーヴァ イタリアの炭酸水500ml">
+                                    </a>
+                                </dt>
+                                <dt>スルジーヴァ&nbsp;イタリアの<br>炭酸水&nbsp;500ml</dt>
+                                <dd>600</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー6品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/kirin.jpg" data-lity>
+                                        <img src="images/drink/kirin_thumb.jpg" srcset="images/drink/2x/kirin_thumb@2x.jpg 2x" alt="キリン零ICHI">
+                                    </a>
+                                </dt>
+                                <dt>キリン零ICHI</dt>
+                                <dd>500</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!--アルコールビール-->
+                <section class="tab-arti tab2 hidden drinkmenu-details drink-alcoholbeer">
+                    <h4 class="drink-smalltitle-Ita">Birra</h4>
+                    <p class="drink-smalltitle-JP">&#091;&nbsp;&nbsp;生ビール・クラフトビール&nbsp;&nbsp;&#093;</p>
+                    <ul class="drink-menulist alcoholbeer">
+                        <!--ドリンクメニュー1品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/orange_thumb.jpg" srcset="images/drink/2x/orange_thumb@2x.jpg 2x" alt="キリンラガー生ビール">
+                                    </a>
+                                </dt>
+                                <dt>キリンラガー&nbsp;生ビール</dt>
+                                <dd>500</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー2品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/bloodorange_thumb.jpg" srcset="images/drink/2x/bloodorange_thumb@2x.jpg 2x" alt="ホワイトビール">
+                                    </a>
+                                </dt>
+                                <dt>水曜日の猫<br>ホワイトビール</dt>
+                                <dd>500</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー3品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/grape_thumb.jpg" srcset="images/drink/2x/grape_thumb@2x.jpg 2x" alt="アフターダーク黒ビール">
+                                    </a>
+                                </dt>
+                                <dt>アフターダーク&nbsp;黒ビール</dt>
+                                <dd>700</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー4品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/ale_thumb.jpg" srcset="images/drink/2x/ale_thumb@2x.jpg 2x" alt="常陸野ネストだいだいエールIPA">
+                                    </a>
+                                </dt>
+                                <dt>常陸野ネスト<br>だいだいエールIPA</dt>
+                                <dd>700</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー5品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/water_thumb.jpg" srcset="images/drink/2x/water_thumb@2x.jpg 2x" alt="夜な夜なエールペールエール">
+                                    </a>
+                                </dt>
+                                <dt>夜な夜なエール<br>ペールエール</dt>
+                                <dd>600</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!--コーヒーアンドティー-->
+                <section class="tab-arti tab3 hidden drinkmenu-details drink-cafeandtea">
+                    <h4 class="drink-smalltitle-Ita">Cafe &amp; Tea</h4>
+                    <p class="drink-smalltitle-JP">&#091;&nbsp;&nbsp;コーヒー&amp;ティー&nbsp;&nbsp;&#093;</p>
+                    <ul class="drink-menulist cafeandtea">
+                        <!--ドリンクメニュー1品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/orange_thumb.jpg" srcset="images/drink/2x/orange_thumb@2x.jpg 2x" alt="コーヒーとエスプレッソ">
+                                    </a>
+                                </dt>
+                                <dt>コーヒー&nbsp;&frasl;&nbsp;エスプレッソ</dt>
+                                <dd>300</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー2品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/bloodorange_thumb.jpg" srcset="images/drink/2x/bloodorange_thumb@2x.jpg 2x" alt="カプチーノ">
+                                    </a>
+                                </dt>
+                                <dt>カプチーノ</dt>
+                                <dd>400</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー3品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2 clearfix">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/grape_thumb.jpg" srcset="images/drink/2x/grape_thumb@2x.jpg 2x" alt="ハーブティー">
+                                    </a>
+                                </dt>
+                                <dt>ハーブティー</dt>
+                                <dd>400</dd>
+                            </dl>
+                        </li>
+                        
+                        <!--ドリンクメニュー4品目-->
+                        <li class="drinkmenu list-layer1">
+                            <dl class="list-layer2">
+                                <dt>
+                                    <a href="images/drink/orange.jpg" data-lity>
+                                        <img src="images/drink/ale_thumb.jpg" srcset="images/drink/2x/ale_thumb@2x.jpg 2x" alt="緑茶">
+                                    </a>
+                                </dt>
+                                <dt>緑茶</dt>
+                                <dd>300</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>                
+            </section>	
+            <!--|||||||||||||||||||||||||||||||||||||||||||||| メニューここまで ||||||||||||||||||||||||||||||||||||||||||||||-->
+            
+		</article>
+		
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        パーティ
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		<article id="party">
+            <header class="party-article-header">
+                <figure class="header-image party">
+                    <img src="images/header_party.png" srcset="images/2x/header_party@2x.png 2x" alt="パーティ アンド イベント" width="100%" draggable="false">
+                </figure>
+                <h2 class="section-title">パーティ</h2>
+                <p class="sub">ワイン食堂MAREAでは、通常営業のほかに貸切りパーティやイベントも開催しています。<br>思い出に残る楽しいパーティをお楽しみください。<br>飲み会・クラス会・披露宴・二次会・誕生会など、素敵なパーティ作りをお手伝いいたします。<br>コース料理や飲み放題もご用意しておりますが、ご予算や人数、ご希望のスタイルに合わせて、<br>お食事やお飲み物をカスタマイズすることもできます。<br>どうぞお気軽にご相談ください。
+                </p>
+            </header>
+            <div class="party-contents-wrap">
+                <h3>Party Plan</h3>
+                <div class="party-contents-wrap-inner">
+        			<section class="party-contents-one">
+                        <p>貸切り基本プラン<br></p>
+                        <ol>
+                            <li><p>■ 時間：2時間半</p></li>
+                            <li><p>■ 料金：お食事＋お飲物＋場所代含め<br>
+                            11:30-15:00の間 …10万円～<br>
+                            15:00-18:00の間 … 7万円～<br>
+                            18:00-23:00の間 …12万円～</p><br></li>
+                            <li><p>■ 人数：20名様～40名様
+                            <br>立食スタイルもお薦めです。
+                            <br>メニュー内容は人数やご予算に応じて、ご相談に応じます。
+                            <br>お得な飲み放題やお薦めパーティープランもご用意しています。</p></li>
+                        </ol>
+                    </section>
+                    <section class="party-contents-two">
+                        <ol>
+                            <li>● 飲み放題プラン　お1人様　お料理代＋2500円<br>
+                            お飲物の内容についてはご相談ください。</li>
+                            <li>
+                                <p>【パーティーメニュー例】</p>
+                                <p>● お1人様　￥3500コース</p>
+                                <ul>
+                                    <li>前菜３種盛り合わせ</li>
+                                    <li>ピッツァ１品</li>
+                                    <li>パスタ１品</li>
+                                    <li>ドルチェ</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>● お1人様　￥5000コース</p>
+                                <ul>
+                                    <li>前菜３種盛り合わせ</li>
+                                    <li>ピッツァ１品</li>
+                                    <li>パスタ１品</li>
+                                    <li>セコンディ１品</li>
+                                    <li>ドルチェ</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+		</article>
+		
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        ギャラリー
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+		<!--<article id="gallery">
+            <header class="gallery-article-header">
+                <figure class="header-image gallery">
+                    <img src="images/header_gallery.png" srcset="images/2x/header_gallery@2x.png 2x" alt="ギャラリー" width="100%">
+                </figure>
+                <h2 class="section-title"></h2>
+                <p class="sub"></p>
+            </header>
+			<section class="gallery-contents-one">
+				
+            </section>		
+		</article>-->
+	</main>
+    
+    
+<!--
+////////////////////////////////////////////////////////////////////////////////////////
+
+                                        フッター
+
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+    <footer id="footer">
+        <section class="footer-contents-one">
+            <address class="footer-address">
+                <div class="tel"><p>ご予約・お問い合わせ</p><p>050-3469-3174</p></div>
+                <p class="address-sub">〒106-0031 東京都港区西麻布3-24-9 上田ビルB1F</p>
+                <div class="address-inner clearfix">
+                    
+                    <dl class="address-description">
+                        <dt>営業時間</dt>
+                        <dd><p>11：30～15：00（L.O.13：30 ）</p>
+                            <p>17：30～23：00（L.O.21：00 ）</p>
+                        </dd>
+                        <dt>定休日</dt>
+                        <dd>月曜日・毎月第1火曜日</dd>
+                    </dl>
+                    <dl class="address-description">
+                        <dt>アクセス</dt>
+                        <dd><p>地下鉄丸ノ内線 中野富士見町駅 徒歩1分</p>
+                            <p>地下鉄丸ノ内線 中野新橋駅 徒歩10分</p>
+                        </dd>
+                        <dt></dt>
+                    </dl>
+                </div>
+            </address>
+        </section>
+        <aside class="footer-contents-other">
+            <div class="footer-link-one">
+                <ul>
+                    <li><a href="https://www.facebook.com/takehiro.handa.9" target="_blank"><img src="images/asideLink1.svg" alt="FACE BOOK" width="45" height="45"></a></li>
+                    <li><a><img src="images/asideLink2.svg" alt="instagram" width="45" height="45"></a></li>
+                    <li><a href="https://hitosara.com/0006121675/" target="_blank"><img src="images/asideLink3.svg" alt="ヒトサラ" width="45" height="45"></a></li>
+                    <li><a href="https://tabelog.com/tokyo/A1319/A131903/13235609/" target="_blank"><img src="images/asideLink4.svg" alt="食べログ" width="45" height="45"></a></li>
+                    <li><a href="https://www.winomy.jp/r0001219/" target="_blank"><img src="images/asideLink5.svg" alt="ワイノミ" width="45" height="45"></a></li>
+                </ul>
+            </div>
+            <div class="footer-link-two">
+                <ul>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <!--<li><a href="link.html">Link</a></li>-->
+                    <!--<li><a href="footer/site_map.html">Site Map</a></li>
+                    <li><a href="footer/recruit.html">Recruit</a></li>-->
+                    
+                </ul>
+                <p><small>Copyright &copy; 2019 MAREA All Rights Reserved.</small></p>
+            </div>
+        </aside>
+    </footer>
+</div>
+    
+    
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+													JavaScript,JQuery
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--ここに右からスライドしてくるコンテンツ内容-->
+<div off-canvas="sb-left left overlay" class="slidebar">
+	<header class="nav-header">
+        <div class="slide-header">
+            <div class="slide-title-image"><img src="images/title_head.svg" alt="ワイン食堂 MAREA マレーア"></div>
+            <div class="slide-info">
+                <p>ご予約・お問合せ</p>
+                <address class="header-address">
+                    <p>050-3469-3174</p>
+                    <p>〒166-0012 <br>東京都杉並区和田1-17-17</p>
+                </address>
+            </div>
+        </div>
+		<p class="nav-title title-font">MENU</p>
+		<nav class="nav-header-nav">
+			<ul class="nav-header-ul">
+				<li><a href="#home">Home</a></li>
+                <li><a href="#material">Material</a></li>
+				<li><a href="#wine">Wine</a></li>
+    			<li><a href="#food">Food</a></li>
+        		<li><a href="#drink">Drink</a></li>
+            	<li><a href="#party">Party</a></li>
+                <!--<li><a href="#gallery">Gallery</a></li>-->
+                <li><a href="access.html" class="animsition-link" data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="600">Access</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--<div class="close-wrap">
+		<p class="sb-close close">close</p>
+	</div>-->
+</div>
+
+<script src="js/scrollLink.js"></script>
+<script src="js/animsition.min.js"></script>
+
+
+    
+<script>
+$('.hamburger').click(function() {
+  $(this).toggleClass('is-toggled');
+});
+</script>
+    
+<!--スマフォ用スライドバーの展開スクリプト-->
+<script src="js/slidebars.min.js"></script>
+    
+<!--スライドバー展開用javascript-->
+<script>
+( function ( $ ) {
+ // Initialize Slidebars
+ var controller = new slidebars();
+ controller.init();
+
+ // Open left
+ $( '.sb-open-left' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.open( 'sb-left' );
+ } );
+
+ // Toggle left
+ $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.toggle( 'sb-left' );
+ } );
+
+ // Open right
+ $( '.sb-open-right' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.open( 'sb-right' );
+ } );
+
+ // Toggle right
+ $( '.sb-toggle-right' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.toggle( 'sb-right' );
+ } );
+
+ // Close
+ $( '.sb-close' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.close();
+ } );
+} ) ( jQuery );
+</script>    
+    
+    
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-left',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    
+    
+</script>
+<script>
+var tabCnt = $(".tab-arti").length;
+var tabNum = 1;
+var tabLength = 0;
+var tabControl = 0;
+    
+//タブの制御
+var tabNumCont = function() {
+	$("#" + tabNum).removeClass("nochoice");
+	$("#" + tabNum).addClass("now");
+	$(".tab" + tabNum).removeClass("hidden");
+	$(".tab" + tabNum).addClass("show");
+}
+
+var tabInit = function() {
+	for(var i = 1; i <= tabCnt; i++) {
+		$("#" + i).removeClass("now");
+		$("#" + i).addClass("nochoice");
+		$(".tab" + i).removeClass("show");
+		$(".tab" + i).addClass("hidden");
+	}
+}
+
+$(".tab-li").click(function(){
+    tabLength = $(".tab-li").index(this);
+	var tabName = parseInt($(this).attr("id"));
+	tabNum = tabName;//クリックした年の番号を取得
+	tabInit();//一旦すべて非表示にする処理
+	tabNumCont();//目的の記事のみ表示する処理
+});    
+</script>
+<script src="js/lity.min.js" type="text/javascript"></script>
+    
+<!--ウィンドウサイズに応じて処理-->
+<!--
+<script>
+    $(window).resize(function() {
+        var windowSize = $(window).width();
+        if(windowSize >= 769) {
+            $(".material-desc").css({
+                "display" : "block"
+            });
+        } else {
+            $(".material-desc").css({
+                "display" : "none"
+            });
+            $(".material-close").css({
+                "display" : "none"
+            });
+        }
+    });
+    
+    $(".material-button1").on("click", function() {
+        $("#md1").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+    
+    $(".material-button2").on("click", function() {
+        $("#md2").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+    
+    $(".material-button3").on("click", function() {
+        $("#md3").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+    
+    $(".material-button4").on("click", function() {
+        $("#md4").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+    
+    $(".material-button5").on("click", function() {
+        $("#md5").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+    
+    $(".material-button6").on("click", function() {
+        $("#md6").fadeToggle();
+        $(".material-close").fadeToggle();
+        return false;
+    });
+     
+    $(".material-close").on("click", function() {
+        $(".material-desc").fadeOut();
+        $(".material-close").fadeOut();
+    });
+    
+    
+</script>    
+<script>
+            $(".material-list1").on("inview", function() {
+                $(".material-list1").addClass("animate-desc");
+            });
+    
+            $(".material-list2").on("inview", function() {
+                $(".material-list2").addClass("animate-desc");
+            });
+    
+            $(".material-list3").on("inview", function() {
+                $(".material-list3").addClass("animate-desc");
+            });
+            
+            $(".material-list4").on("inview", function() {
+                $(".material-list4").addClass("animate-desc");
+            });
+    
+            $(".material-list5").on("inview", function() {
+                $(".material-list5").addClass("animate-desc");
+            });
+    
+            $(".material-list6").on("inview", function() {
+                $(".material-list6").addClass("animate-desc");
+            });
+
+</script>
+-->
+    
+<script>
+    $(".pickup-button").on("click", function() {
+        $(".pickupul").slideToggle(1000);
+    });
+</script>
+<script>
+$("#responsive-globalmenu-button").click(function() {
+$(this).toggleClass("hamburger-open");
+});
+
+</script>
+    
+
+</body>
+</html>
