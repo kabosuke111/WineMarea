@@ -5,12 +5,18 @@
     src: url("../font/STIXGeneralItalic.otf") ;
 }
 
+@font-face {
+    font-family: "BigTitle";
+    src: url("../font/BigCaslon.woff"),url("../font/BigCaslon.ttf") ;
+}
+
 $burger-height: 2px;
 $burger-color: rgba(255,255,255,0.7);
 $margin-top: 8px;
 $rotation: 45deg;
 
 $main_color: #a5140e;
+$menu_main_color: #de200b;
 $sub_color: #1c1a1a;
 $gold_color: #d7c27c;
 $main_font:  'M PLUS Rounded 1c', sans-serif;
@@ -64,8 +70,11 @@ html {
 }
 
 body {
-	font-size: 1.5rem;
-    font-family: $main_font, "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font: {
+        size: 1.5rem;
+        weight: 300;
+        family: $main_font, "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1268,7 +1277,7 @@ li {
         .food-number-wrap {
             display: block;
             margin-top: 20px;
-            font-family: "STIX";
+            font-family: "STIX", serif;
 
             .food-numberA {
                 font-size: 42px;
@@ -1379,8 +1388,140 @@ li {
     }
 }
 
+//メインとなるメニュー
+.food-contents-two {
+    @include MX(1080px);
+    border: solid 1px $menu_main_color;
+    position: relative;
+}
 
+.food-contents-title {
+    font-size: 7.2rem;
+    font-family: "BigTitle", serif;
+    color: $menu_main_color;
+    margin-top: 38px;
+}
 
+.menu-wrap {
+    @include MX(1080px);
+    overflow: hidden;
+}
+
+.menu-day {
+    margin-top: 40px;
+    @include FLEX();
+    
+    li {
+        font-size: 2.2rem;
+        background: $menu_main_color;
+        border: solid 1px $menu_main_color;
+        border-radius: 15px;
+        width: 150px;
+        padding: 11px;
+        letter-spacing: 2px;
+        margin-right: 45px;
+        color: #fff;
+        transition: 0.5s ease-out;
+        line-height: 1;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &:hover {
+            cursor: pointer;
+            background: #fff;
+            color: $menu_main_color;
+        }
+    }
+}
+
+.menu-wrap {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-type {
+    @include FLEX(flex, flex-start);
+    flex-wrap: nowrap;
+    transition: 2.0s;
+    
+    li {
+        width: 248px;
+        margin-left: 60px;
+        
+        img {
+            display: block;
+            width: 248px;
+            
+        }
+        
+        p {
+            width: 248px;
+            
+        }
+    }
+}
+
+.menu-slide-action {
+    transform: translateX(-930px);
+    transition: 2.0s;
+}
+
+.menu-type-button {
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    z-index: 2;
+    border: solid 1px #888;
+    background: linear-gradient(#fefefe, #dedede);
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#next {
+    border-radius: 6px 0 0 6px;
+    left: calc(100% - 40px);
+    border-right: none;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-top: solid 1px #aaa;
+        border-right: solid 1px #aaa;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 45%;
+    }
+}
+
+#prev {
+    border-radius: 0 6px 6px 0;
+    left: 0;
+    border-left: none;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-top: solid 1px #aaa;
+        border-left: solid 1px #aaa;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 45%;
+        left: 14px;
+    }
+    
+    
+}
 
 
 /*----------------------------------------------------------------------

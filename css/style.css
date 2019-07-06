@@ -3,6 +3,9 @@
 @font-face {
   font-family: "STIX";
   src: url("../font/STIXGeneralItalic.otf"); }
+@font-face {
+  font-family: "BigTitle";
+  src: url("../font/BigCaslon.woff"), url("../font/BigCaslon.ttf"); }
 * {
   margin: 0;
   padding: 0; }
@@ -15,6 +18,7 @@ html {
 
 body {
   font-size: 1.5rem;
+  font-weight: 300;
   font-family: "M PLUS Rounded 1c", sans-serif, "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif"; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1002,7 +1006,7 @@ li {
     [class^="food-contents-special-"] .food-number .food-number-wrap {
       display: block;
       margin-top: 20px;
-      font-family: "STIX"; }
+      font-family: "STIX", serif; }
       [class^="food-contents-special-"] .food-number .food-number-wrap .food-numberA {
         font-size: 42px;
         line-height: 0;
@@ -1085,6 +1089,120 @@ li {
           height: auto;
           margin: 0 auto;
           display: block; }
+
+.food-contents-two {
+  max-width: 1080px;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: solid 1px #de200b;
+  position: relative; }
+
+.food-contents-title {
+  font-size: 7.2rem;
+  font-family: "BigTitle", serif;
+  color: #de200b;
+  margin-top: 38px; }
+
+.menu-wrap {
+  max-width: 1080px;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.menu-day {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .menu-day li {
+    font-size: 2.2rem;
+    background: #de200b;
+    border: solid 1px #de200b;
+    border-radius: 15px;
+    width: 150px;
+    padding: 11px;
+    letter-spacing: 2px;
+    margin-right: 45px;
+    color: #fff;
+    transition: 0.5s ease-out;
+    line-height: 1; }
+    .menu-day li:last-child {
+      margin-right: 0; }
+    .menu-day li:hover {
+      cursor: pointer;
+      background: #fff;
+      color: #de200b; }
+
+.menu-wrap {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1; }
+
+.menu-type {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  transition: 2.0s; }
+  .menu-type li {
+    width: 248px;
+    margin-left: 60px; }
+    .menu-type li img {
+      display: block;
+      width: 248px; }
+    .menu-type li p {
+      width: 248px; }
+
+.menu-slide-action {
+  transform: translateX(-930px);
+  transition: 2.0s; }
+
+.menu-type-button {
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 280px;
+  left: 0;
+  z-index: 2;
+  border: solid 1px #888;
+  background: linear-gradient(#fefefe, #dedede); }
+  .menu-type-button:hover {
+    cursor: pointer; }
+
+#next {
+  border-radius: 6px 0 0 6px;
+  left: calc(100% - 40px);
+  border-right: none; }
+  #next::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: solid 1px #aaa;
+    border-right: solid 1px #aaa;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 45%; }
+
+#prev {
+  border-radius: 0 6px 6px 0;
+  left: 0;
+  border-left: none; }
+  #prev::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: solid 1px #aaa;
+    border-left: solid 1px #aaa;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 45%;
+    left: 14px; }
 
 /*----------------------------------------------------------------------
 
