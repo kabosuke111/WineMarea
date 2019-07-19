@@ -1099,12 +1099,13 @@ $(this).toggleClass("hamburger-open");
     
 <!--メニュータイプ選びの部分がスライドする-->
 <script>
+    
     let slideButtonPrev = document.getElementById("prev");
     let slideButtonNext = document.getElementById("next");
     let slideMenu = document.getElementById("menuType");
     let slMenuChild = slideMenu.children;
-    let slidePoint = 310;
-    let slideActPoint = 0;
+    let slidePoint = 310;//移動距離
+    let slideActPoint = 0;//移動距離をかける
     
     //実際に動く処理
     let slideAction = function() {

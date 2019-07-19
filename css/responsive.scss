@@ -422,9 +422,20 @@ $phone_breakpoint: 768px;
             }
         }
         
-        
-        .food-contents-special {
+        .food-contents-two {
             
+            .menu-day {
+                flex-direction: column;
+                justify-content: center;
+                
+                li {
+                    margin: 10px auto;
+                }
+            }
+            
+            .menu-type-button {
+                top: 420px;
+            }
         }
     }
     

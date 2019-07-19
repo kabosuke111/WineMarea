@@ -254,6 +254,13 @@
           display: block; }
         #wrapper #main #food .food-chef-contents .food-chef-date .date2 {
           width: 100%; }
+    #wrapper #main #food .food-contents-two .menu-day {
+      flex-direction: column;
+      justify-content: center; }
+      #wrapper #main #food .food-contents-two .menu-day li {
+        margin: 10px auto; }
+    #wrapper #main #food .food-contents-two .menu-type-button {
+      top: 420px; }
     #wrapper #main #drink .drink-list {
       max-width: 1200px;
       margin: 20px auto 30px;
