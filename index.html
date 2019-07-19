@@ -1099,16 +1099,41 @@ $(this).toggleClass("hamburger-open");
     
 <!--メニュータイプ選びの部分がスライドする-->
 <script>
-    var slideButtonPrev = document.getElementById("prev");
-    var slideButtonNext = document.getElementById("next");
-    var slideMenu = document.getElementById("menuType");
-    slideButtonPrev.onclick = function() {
-        slideMenu.classList.remove("menu-slide-action");
+    let slideButtonPrev = document.getElementById("prev");
+    let slideButtonNext = document.getElementById("next");
+    let slideMenu = document.getElementById("menuType");
+    let slMenuChild = slideMenu.children;
+    let slidePoint = 310;
+    let slideActPoint = 0;
+    
+    //実際に動く処理
+    let slideAction = function() {
+        console.log(slideActPoint);
+        let slide = slidePoint * slideActPoint;
+        slideMenu.style.transform = "translateX(-"+ slide +"px)";
     }
     
-    slideButtonNext.onclick = function() {
-        slideMenu.classList.add("menu-slide-action");
+    //戻るボタンを押した時の処理
+    slideButtonPrev.onclick = function() {
+        if(slideActPoint < 1) {
+            slideActPoint = 0;
+        } else {
+            --slideActPoint;
+        }
+        slideAction();
     }
+    
+    //進むボタンを押した時の処理
+    slideButtonNext.onclick = function() {
+        if (slideActPoint < slMenuChild.length-1) {
+            slideActPoint++;
+        } else {
+            slideActPoint = slMenuChild.length-1;
+        }
+        slideAction();
+    }
+    
+
 
 </script>
 
