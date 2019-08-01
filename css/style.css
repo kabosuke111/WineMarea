@@ -1151,6 +1151,8 @@ li {
   .menu-type li {
     width: 248px;
     margin-left: 60px; }
+    .menu-type li:first-child {
+      margin-left: 110px; }
     .menu-type li img {
       display: block;
       width: 248px; }
@@ -1158,7 +1160,6 @@ li {
       width: 248px; }
 
 .menu-slide-action {
-  transform: translateX(-930px);
   transition: 2.0s; }
 
 .menu-type-button {

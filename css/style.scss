@@ -1451,6 +1451,10 @@ li {
         width: 248px;
         margin-left: 60px;
         
+        &:first-child {
+            margin-left: 110px;
+        }
+        
         img {
             display: block;
             width: 248px;
