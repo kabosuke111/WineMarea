@@ -49,6 +49,9 @@
     }
     
 </script>
+<script>
+    
+</script>
 </head>
 <body>
 <div id="wrapper" class="animsition" data-animsition-in-class="fade-in-left"
@@ -484,16 +487,16 @@
 
                 <!--///////////  メニュー日の切り替え  ///////////-->
                 <ul class="menu-day">
-                    <li class="day">共&nbsp;&nbsp;&nbsp;&nbsp;通</li>
-                    <li class="day">平&nbsp;&nbsp;&nbsp;&nbsp;日</li>
-                    <li class="day">土日祝日</li>
+                    <li class="day" id="commonButton">共&nbsp;&nbsp;&nbsp;&nbsp;通</li>
+                    <li class="day" id="weekdayButton">平&nbsp;&nbsp;&nbsp;&nbsp;日</li>
+                    <li class="day" id="holidayButton">土日祝日</li>
                 </ul>
                 <div id="prev" class="menu-type-button"></div>
                 <div id="next" class="menu-type-button"></div>
 
                 <!--///////////  共通のメニュー  ///////////-->
                 <div class="menu-wrap lanch common">
-                    <ul id="menuType" class="menu-type">
+                    <ul id="menuTypeCommon" class="menu-type">
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
@@ -554,7 +557,7 @@
 
                 <!--///////////  平日のメニュー  ///////////-->
                 <div class="menu-wrap lanch weekday">
-                    <ul id="menuType" class="menu-type">
+                    <ul id="menuTypeWeekday" class="menu-type">
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
@@ -613,9 +616,9 @@
                     
                 </div>
 
-                <!--///////////  平日のメニュー  ///////////-->
+                <!--///////////  休日のメニュー  ///////////-->
                 <div class="menu-wrap lanch holiday">
-                    <ul id="menuType" class="menu-type">
+                    <ul id="menuTypeHoliday" class="menu-type">
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
                         <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
@@ -1259,19 +1262,52 @@ $(this).toggleClass("hamburger-open");
     
 <!--メニュータイプ選びの部分がスライドする-->
 <script>
-    (function() {
+
+
+    
+
+    (function slmenuMove() {
+        let array = ["menuTypeCommon", "menuTypeWeekday", "menuTypeHoliday"];
+        let slideMenu = document.getElementById(array[0]);
+
+        
+
+        function slideChange() {
+            document.getElementById("commonButton").addEventListener("click", function(){
+                slideMenu = document.getElementById(array[0]);
+                slidePoint = 310;
+                slideActPoint = 0;
+            });
+
+            document.getElementById("weekdayButton").addEventListener("click", function(){
+                slideMenu = document.getElementById(array[1]);
+                slidePoint = 310;
+                slideActPoint = 0;
+            });
+
+            document.getElementById("holidayButton").addEventListener("click", function(){
+                slideMenu = document.getElementById(array[2]);
+                slidePoint = 310;
+                slideActPoint = 0;
+            });
+            
+        };
+        slideChange();
+
+
         let slideButtonPrev = document.getElementById("prev");
         let slideButtonNext = document.getElementById("next");
-        let slideMenu = document.getElementById("menuType");
-        let slMenuChild = slideMenu.children;
         let slidePoint = 310;//移動距離
         let slideActPoint = 0;//移動距離をかける
+        let slMenuChild = slideMenu.children;
 
         //実際に動く処理
         let slideAction = function() {
             console.log(slideActPoint);
+            console.log(slideMenu);
             let slide = slidePoint * slideActPoint;
             slideMenu.style.transform = "translateX(-"+ slide +"px)";
+            console.log(slide);
         }
 
         //戻るボタンを押した時の処理
@@ -1294,12 +1330,16 @@ $(this).toggleClass("hamburger-open");
             slideAction();
         }
         
+        
+        
+
+        
+        
     })();
-    
-    
-
-
 </script>
+    
+    
+
 <script src="js/menuchange.js"></script>
 </body>
 </html>
