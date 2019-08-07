@@ -1405,6 +1405,11 @@ li {
 .menu-wrap {
     @include MX(1080px);
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left:0;
+    
+
 }
 
 .menu-day {
@@ -1462,11 +1467,84 @@ li {
         }
         
         p {
-            width: 248px;
-            
+            width: 236px;
+            border: solid 1px $menu_main_color;
+            line-height: 1.3;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 23px;
+            color: $menu_main_color;
         }
     }
 }
+
+//メニューの詳細
+.menu-details {
+    margin-top: 50px;
+    
+    h4 {
+        
+        span {
+            margin-bottom: 3px;
+            display: block;
+            text-align: center;
+            
+            &:nth-of-type(1) {
+                font: {
+                    weight: 400;
+                    size: 2.5rem;
+                }
+            }
+            
+            &:nth-of-type(2) {
+                font: {
+                    size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+[class^="foodmenu"] {
+    @include FLEX(flex, start);
+    
+    dt:nth-of-type(1) {
+        
+        img {
+            display: block;
+            @include MX(none,none,209px, 209px);
+        }
+        
+    }
+    dt:nth-of-type(2) {
+        font: {
+            weight: 400;
+            size: 1.2rem;
+        }
+        text-align: left;
+        margin-top: 6px;
+    }
+    
+    dd {
+        background: $menu_main_color;
+        width: 46px;
+        border-radius: 3px;
+        line-height: 1.2;
+        font-family: $ENtitle_font;
+        color: #fff;
+        position: absolute;
+        top: 215px;
+        right: 23px;
+    }
+}
+
+.list-layer2 {
+    @include MX(none,none,251px, 360px);
+    position: relative;
+    padding: 0 21px;
+}
+
+
 
 .menu-slide-action {
   //  transform: translateX(0);
@@ -1523,8 +1601,15 @@ li {
         top: 45%;
         left: 14px;
     }
-    
-    
+}
+
+//scriptで表示する
+.show_menu {
+    display: block;
+}
+
+.holiday, .common {
+    display: none;
 }
 
 

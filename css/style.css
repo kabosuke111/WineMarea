@@ -1111,7 +1111,10 @@ li {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .menu-day {
   margin-top: 40px;
@@ -1157,7 +1160,61 @@ li {
       display: block;
       width: 248px; }
     .menu-type li p {
-      width: 248px; }
+      width: 236px;
+      border: solid 1px #de200b;
+      line-height: 1.3;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 23px;
+      color: #de200b; }
+
+.menu-details {
+  margin-top: 50px; }
+  .menu-details h4 span {
+    margin-bottom: 3px;
+    display: block;
+    text-align: center; }
+    .menu-details h4 span:nth-of-type(1) {
+      font-weight: 400;
+      font-size: 2.5rem; }
+    .menu-details h4 span:nth-of-type(2) {
+      font-size: 2.2rem; }
+
+[class^="foodmenu"] {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap; }
+  [class^="foodmenu"] dt:nth-of-type(1) img {
+    display: block;
+    max-width: none;
+    max-height: none;
+    width: 209px;
+    height: 209px;
+    margin: 0 auto; }
+  [class^="foodmenu"] dt:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 6px; }
+  [class^="foodmenu"] dd {
+    background: #de200b;
+    width: 46px;
+    border-radius: 3px;
+    line-height: 1.2;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 215px;
+    right: 23px; }
+
+.list-layer2 {
+  max-width: none;
+  max-height: none;
+  width: 251px;
+  height: 360px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 21px; }
 
 .menu-slide-action {
   transition: 2.0s; }
@@ -1204,6 +1261,12 @@ li {
     position: absolute;
     top: 45%;
     left: 14px; }
+
+.show_menu {
+  display: block; }
+
+.holiday, .common {
+  display: none; }
 
 /*----------------------------------------------------------------------
 
