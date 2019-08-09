@@ -1457,7 +1457,7 @@ li {
         margin-left: 60px;
         
         &:first-child {
-            margin-left: 110px;
+            margin-left: calc(40px + 5%);
         }
         
         img {
@@ -1608,7 +1608,7 @@ li {
     display: block;
 }
 
-.holiday, .common {
+.holiday, .weekday {
     display: none;
 }
 

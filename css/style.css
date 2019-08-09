@@ -1155,7 +1155,7 @@ li {
     width: 248px;
     margin-left: 60px; }
     .menu-type li:first-child {
-      margin-left: 110px; }
+      margin-left: calc(40px + 5%); }
     .menu-type li img {
       display: block;
       width: 248px; }
@@ -1265,7 +1265,7 @@ li {
 .show_menu {
   display: block; }
 
-.holiday, .common {
+.holiday, .weekday {
   display: none; }
 
 /*----------------------------------------------------------------------
