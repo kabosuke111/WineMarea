@@ -348,7 +348,10 @@
       display: none; }
     #wrapper #main #food .food-contents-two .menu-type {
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      max-width: 440px;
+      width: 100%;
+      margin: 0 auto; }
       #wrapper #main #food .food-contents-two .menu-type li {
         width: 100px;
         margin: 5px; }
@@ -366,6 +369,8 @@
           padding: 10px 0;
           color: #fff;
           background: #de200b; }
+        #wrapper #main #food .food-contents-two .menu-type li .appendElement {
+          width: 100px; }
     #wrapper #main #drink .drink-list {
       max-width: 1200px;
       margin: 20px auto 30px;

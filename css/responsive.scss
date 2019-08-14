@@ -529,6 +529,7 @@ $phone_breakpoint: 768px;
         .food-contents-two {
             
             .menu-day {
+                
                 flex-direction: column;
                 justify-content: center;
                 
@@ -545,6 +546,9 @@ $phone_breakpoint: 768px;
             .menu-type {
                 flex-wrap: wrap;
                 justify-content: center;
+                max-width: 440px;
+                width: 100%;
+                margin: 0 auto;
                 
                 li {
                     width: 100px;
@@ -570,7 +574,10 @@ $phone_breakpoint: 768px;
                         color: #fff;
                         background: $menu_main_color;
                     }
-
+                    
+                    .appendElement {
+                        width: 100px;
+                    }
                 }
             }
         }

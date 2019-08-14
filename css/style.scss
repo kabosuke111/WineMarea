@@ -1450,22 +1450,18 @@ li {
 
 //写真からメニュージャンルを選択
 .menu-type {
-    @include FLEX(flex, flex-start);
+    @include FLEX(flex, center);
     flex-wrap: nowrap;
     transition: 2.0s;
     
     li {
-        width: 248px;
-        margin-left: 60px;
+        width: 236px;
+        margin: 0 30px;
         cursor: pointer;
-        
-        &:first-child {
-            margin-left: calc(40px + 5%);
-        }
         
         img {
             display: block;
-            width: 248px;
+            width: 236px;
             
         }
         

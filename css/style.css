@@ -1148,19 +1148,19 @@ li {
 
 .menu-type {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   flex-wrap: nowrap;
   transition: 2.0s; }
   .menu-type li {
-    width: 248px;
-    margin-left: 60px;
+    max-width: 236px;
+    width: 100%;
+    margin: 0 30px;
     cursor: pointer; }
-    .menu-type li:first-child {
-      margin-left: calc(40px + 5%); }
     .menu-type li img {
       display: block;
-      width: 248px; }
+      max-width: 236px;
+      width: 100%; }
     .menu-type li p {
       width: 236px;
       border: solid 1px #de200b;
