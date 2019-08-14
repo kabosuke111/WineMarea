@@ -76,6 +76,9 @@ li {
   position: relative;
   z-index: 1; }
 
+.responsiv-only {
+  display: none; }
+
 #material, #wine, #food, #drink, #party, #gallery {
   padding-top: 90px; }
 
@@ -1114,7 +1117,10 @@ li {
   overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1; }
 
 .menu-day {
   margin-top: 40px;
@@ -1140,11 +1146,6 @@ li {
       background: #fff;
       color: #de200b; }
 
-.menu-wrap {
-  margin-top: 50px;
-  position: relative;
-  z-index: 1; }
-
 .menu-type {
   display: flex;
   justify-content: flex-start;
@@ -1153,7 +1154,8 @@ li {
   transition: 2.0s; }
   .menu-type li {
     width: 248px;
-    margin-left: 60px; }
+    margin-left: 60px;
+    cursor: pointer; }
     .menu-type li:first-child {
       margin-left: calc(40px + 5%); }
     .menu-type li img {

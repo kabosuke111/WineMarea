@@ -146,6 +146,10 @@ $phone_breakpoint: 768px;
 
 @media screen and (max-width: 768px) {
 #wrapper {
+    .responsiv-only {
+        display: inline;
+    }
+    
     .contents-title {
         font-size: 2.0rem;
         padding: 10px;
@@ -534,9 +538,44 @@ $phone_breakpoint: 768px;
             }
             
             .menu-type-button {
-                top: 420px;
+                display: none;
+            }
+            
+            //レスポンシブでは画像が表示されないようにする。
+            .menu-type {
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                li {
+                    width: 100px;
+                    margin: 5px;
+                    
+                    
+                    &:first-child {
+                        margin: 5px;
+                    }
+                    
+                    img {
+                        display: none;
+                    }
+                    
+                    p {
+                        width: 100%;
+                        border: none;
+                        line-height: 1.0;
+                        font-size: 2.0rem;
+                        text-align: center;
+                        margin-top: 0;
+                        padding: 10px 0;
+                        color: #fff;
+                        background: $menu_main_color;
+                    }
+
+                }
             }
         }
+        
+        
     }
     
 /*----------------------------------------------------------------------

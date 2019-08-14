@@ -497,11 +497,11 @@
                 <!--///////////  共通のメニュー  ///////////-->
                 <div id="menuCommonWrap" class="menu-wrap lanch common">
                     <ul id="menuTypeCommon" class="menu-type">
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
                     </ul>
 
                     <!--******** ランチ詳細メニュー ********-->
@@ -545,8 +545,6 @@
                                     <dt>いすみの真ダコの<br>カルパッチョ</dt>
                                     <dd>450</dd>
                                 </dl>
-                                <dl class="list-layer2 clearfix">
-                                </dl>
                             </li>
                         </ul>
                     </section>
@@ -557,11 +555,9 @@
                 <!--///////////  平日のメニュー  ///////////-->
                 <div id="menuWeekdayWrap" class="menu-wrap lanch weekday">
                     <ul id="menuTypeWeekday" class="menu-type">
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
                     </ul>
 
                     <!--******** ランチ詳細メニュー ********-->
@@ -617,11 +613,10 @@
                 <!--///////////  休日のメニュー  ///////////-->
                 <div id="menuHolidayWrap" class="menu-wrap lanch holiday">
                     <ul id="menuTypeHoliday" class="menu-type">
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
-                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
+                        <li><img src="images/menu_inner.png" srcset="images/2x/menu_inner@2x.png 2x" alt="anti pasta"><p>anti<br class="responsiv-only"> pasta</p></li>
                     </ul>
 
                     <!--******** ランチ詳細メニュー ********-->
@@ -1259,108 +1254,9 @@ $(this).toggleClass("hamburger-open");
 </script>
     
 <!--メニュータイプ選びの部分がスライドする-->
-<script>
-    (function slmenuMove() {
-        let array = ["menuTypeCommon", "menuTypeWeekday", "menuTypeHoliday"];
-        let slideMenu = document.getElementById(array[0]);
-        
-        //進む・戻るボタンを押した時にIDを代入
-        let slideButtonPrev = document.getElementById("prev");
-        let slideButtonNext = document.getElementById("next");
-        let slidePoint = 310;//移動距離
-        let slideActPoint = 0;//移動距離をかける
-        let slMenuChild = slideMenu.children;//メニューulの子要素を取得
-        let menuId = ["menuCommonWrap","menuWeekdayWrap","menuHolidayWrap"];
-        let p = 0;
-        
-        
-        //メニューを切り替えるための処理
-        let slActionApart = {
-            "showChange" : function() {
-                for(let i = 0; i < menuId.length; i++) {
-                        let none = document.getElementById(menuId[i]);                
-                        none.style.display = "none";    
-                    }
-
-                let change = document.getElementById(menuId[p]);                
-                change.style.display = "block";
-            },
-            
-            "init" : function() {
-                slidePoint = 310;
-                slideActPoint = 0;
-                slideMenu.style.transform = "translateX(0px)";
-            }
-        };
-        
-        
-        function slideChange() {            
-            document.getElementById("commonButton").addEventListener("click", function(){
-                slideMenu = document.getElementById(array[0]);
-                
-                p = 0;
-                slActionApart.init();
-                slActionApart.showChange();
-                
-            });
-
-            document.getElementById("weekdayButton").addEventListener("click", function(){
-                slideMenu = document.getElementById(array[1]);
-                
-                p = 1;
-                slActionApart.init();
-                slActionApart.showChange();
-            });
-
-            document.getElementById("holidayButton").addEventListener("click", function(){
-                slideMenu = document.getElementById(array[2]);
-                
-                p = 2;
-                slActionApart.init();
-                slActionApart.showChange();
-            });
-            
-        };
-        slideChange();
-
-        //実際に動く処理
-        let slideAction = function() {
-            console.log(slideActPoint);
-            console.log(slideMenu);
-            let slide = slidePoint * slideActPoint;
-            slideMenu.style.transform = "translateX(-"+ slide +"px)";
-            console.log(slide);
-        }
-
-        //戻るボタンを押した時の処理
-        slideButtonPrev.onclick = function() {
-            if(slideActPoint < 1) {
-                slideActPoint = 0;
-            } else {
-                --slideActPoint;
-            }
-            slideAction();
-        }
-
-        //進むボタンを押した時の処理
-        slideButtonNext.onclick = function() {
-            if (slideActPoint < slMenuChild.length-1) {
-                slideActPoint++;
-            } else {
-                slideActPoint = slMenuChild.length-1;
-            }
-            slideAction();
-        }
-        
-    })();
-    
-    (function menuChange() {
-        
-    })();
-</script>
     
     
 
-<script src="js/menuchange.js"></script>
+<script src="js/menudesign.js"></script>
 </body>
 </html>

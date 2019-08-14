@@ -137,6 +137,10 @@ li {
     z-index: 1;
 }
 
+.responsiv-only {
+    display: none;
+}
+
 #main {
     
 }
@@ -1402,16 +1406,19 @@ li {
     margin-top: 38px;
 }
 
+//メニューをひとまとめ
 .menu-wrap {
     @include MX(1080px);
     overflow: hidden;
     position: absolute;
     top: 0;
     left:0;
-    
-
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
 }
 
+//日付の選択肢
 .menu-day {
     margin-top: 40px;
     @include FLEX();
@@ -1441,12 +1448,7 @@ li {
     }
 }
 
-.menu-wrap {
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
-}
-
+//写真からメニュージャンルを選択
 .menu-type {
     @include FLEX(flex, flex-start);
     flex-wrap: nowrap;
@@ -1455,6 +1457,7 @@ li {
     li {
         width: 248px;
         margin-left: 60px;
+        cursor: pointer;
         
         &:first-child {
             margin-left: calc(40px + 5%);
