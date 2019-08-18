@@ -1,5 +1,12 @@
 // JavaScript Document
 (function(){
+    
+/*
+    window.onresize = () => {
+        WS = window.innerWidth;//画面の大きさを再取得
+    };*/
+    
+    const ELEM_SIZE = 296;//移動する要素のサイズ。いじらない。
     var al = 0;
     var addChild = [];
     let array = ["menuTypeCommon", "menuTypeWeekday", "menuTypeHoliday"];
@@ -7,11 +14,8 @@
     let slMenuChild = slideMenu.children;//メニューulの子要素を取得
     let elem;
     let appendNum;
-    let b = false;
     const breakOne = 768;
-                
-
-
+    
     let slmenuMove = function (elemWidth) {
         let array = ["menuTypeCommon", "menuTypeWeekday", "menuTypeHoliday"];
         let slideMenu = document.getElementById(array[0]);
@@ -24,8 +28,7 @@
         let slMenuChild = slideMenu.children;//メニューulの子要素を取得
         const menuId = ["menuCommonWrap","menuWeekdayWrap","menuHolidayWrap"];
         let slide, p = 0;
-
-
+        
         //動作のメソッド集
         let slActionApart = {
             //メニューを切り替えるための処理
@@ -45,16 +48,52 @@
                 slideActPoint = 0;
                 slideMenu.style.transform = "translateX(0px)";
                 slMenuChild = slideMenu.children;//メニューulの子要素を取得
+            },
+            
+            //フレックスコンテナにエレメントを入れる
+            "addElem" : function(winSize) {
+                //4で割って余りが３の時 ＝ １つ足す
+                //4で割って余りが２の時 ＝ ２つ足す
+                //4で割って余りが１の時 ＝ ３つ足す
+                let addElemNum = 3;
+                
+                let ce = document.querySelectorAll('.menu-type');
+                let classElem = Array.from(ce);
+                
+                if(winSize <= 768) {
+                    if(slMenuChild % 4 === 1){addElemNum=3;};
+                    for(var i = 0; i < addElemNum; i++) {
+                        let elem = document.createElement('li');
+                        classElem[0].appendChild(elem).setAttribute('class', 'appendElement');
+                    }
+                }
+                   
+                
+                //デバッグ用
+                console.log(document.getElementById("menuTypeCommon"));
             }
-
-
-
-
-
         };
         slActionApart.init();
+        
+        //windowサイズが変化した時、ロードされた時の処理
+        let windowAction = function() {
+            
+            let WS;
+            window.addEventListener("load", function() {
+                slActionApart.init();
+                WS = window.innerWidth;//画面の大きさをはじめに取得
+            });
 
-        //スライドを動かすボタン
+            window.addEventListener("resize", function(){
+                slActionApart.init();
+                WS = window.innerWidth;//画面の大きさを再取得
+                slActionApart.addElem(WS);
+                
+            });
+        };
+        windowAction();
+
+        //スライドを動かすボタン。押した場所の日を代入する
         function slideChange() {
 
             document.getElementById("commonButton").addEventListener("click", function(){
@@ -111,18 +150,10 @@
             } else {
                 slideActPoint = -((slMenuChild.length - 3) / 2);
             }
-
+            console.log("ds");
             slideAction();
         };
     };
-
-    var WS;
-    window.onload = () => {
-        WS = window.innerWidth;//画面の大きさをはじめに取得
-        slmenuMove(296);
-    };
-
-    window.onresize = () => {
-        WS = window.innerWidth;//画面の大きさを再取得
-    };
+    slmenuMove(ELEM_SIZE);
+    
 })();

@@ -370,7 +370,9 @@
           color: #fff;
           background: #de200b; }
         #wrapper #main #food .food-contents-two .menu-type li .appendElement {
-          width: 100px; }
+          width: 100px;
+          background: transparent;
+          color: transparent; }
     #wrapper #main #drink .drink-list {
       max-width: 1200px;
       margin: 20px auto 30px;
