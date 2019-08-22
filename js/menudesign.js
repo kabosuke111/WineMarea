@@ -1,11 +1,6 @@
 // JavaScript Document
 (function(){
-    
-/*
-    window.onresize = () => {
-        WS = window.innerWidth;//画面の大きさを再取得
-    };*/
-    
+
     const ELEM_SIZE = 296;//移動する要素のサイズ。いじらない。
     var al = 0;
     var addChild = [];
@@ -50,6 +45,14 @@
                 slMenuChild = slideMenu.children;//メニューulの子要素を取得
             },
             
+            "removeElem" : function() {
+                let appElemLen = document.querySelectorAll('.appendElement').length;
+                for(var i = 0; i < appElemLen; i++) {
+                    let appElem = document.querySelector('.appendElement');
+                    appElem.parentNode.removeChild(appElem);
+                };
+            },
+            
             //フレックスコンテナにエレメントを入れる
             "addElem" : function(winSize) {
                 //4で割って余りが３の時 ＝ １つ足す
@@ -64,13 +67,23 @@
                     if(slMenuChild % 4 === 1){addElemNum=3;};
                     for(var i = 0; i < addElemNum; i++) {
                         let elem = document.createElement('li');
-                        classElem[0].appendChild(elem).setAttribute('class', 'appendElement');
+                        classElem[p].appendChild(elem).setAttribute('class', 'appendElement');
                     }
-                }
+                } else {
+                    this.removeElem();
+                };
                    
                 
                 //デバッグ用
                 console.log(document.getElementById("menuTypeCommon"));
+                console.log(document.getElementById("menuTypeWeekday"));
+                console.log(document.getElementById("menuTypeHoliday"));
+            },
+            
+            "getWinSize" : function() {
+                this.init();
+                WS = window.innerWidth;//画面の大きさを再取得
+                this.addElem(WS);
             }
         };
         slActionApart.init();
@@ -80,14 +93,11 @@
             
             let WS;
             window.addEventListener("load", function() {
-                slActionApart.init();
-                WS = window.innerWidth;//画面の大きさをはじめに取得
+                slActionApart.getWinSize();
             });
 
             window.addEventListener("resize", function(){
-                slActionApart.init();
-                WS = window.innerWidth;//画面の大きさを再取得
-                slActionApart.addElem(WS);
+                slActionApart.getWinSize();
                 
             });
         };
@@ -95,20 +105,36 @@
 
         //スライドを動かすボタン。押した場所の日を代入する
         function slideChange() {
+//            const button = ['common', 'weekday', 'holiday'];
+//            for (var i = 0; i < button.length; i++) {
+//                document.getElementById(button[i] + "Button").addEventListener("click", function(){
+//                    slideMenu = document.getElementById(array[i]);
+//                    p = i;
+//                    slActionApart.init();
+//                    slActionApart.showChange();
+//                    slActionApart.removeElem();
+//                    slActionApart.getWinSize();
+//
+//                });    
+//            };
+            
 
             document.getElementById("commonButton").addEventListener("click", function(){
                 slideMenu = document.getElementById(array[0]);
                 p = 0;
                 slActionApart.init();
                 slActionApart.showChange();
-
+                slActionApart.removeElem();
+                slActionApart.getWinSize();
             });
-
+            
             document.getElementById("weekdayButton").addEventListener("click", function(){
                 slideMenu = document.getElementById(array[1]);
                 p = 1;
                 slActionApart.init();
                 slActionApart.showChange();
+                slActionApart.removeElem();
+                slActionApart.getWinSize();
             });
 
             document.getElementById("holidayButton").addEventListener("click", function(){
@@ -116,6 +142,8 @@
                 p = 2;
                 slActionApart.init();
                 slActionApart.showChange();
+                slActionApart.removeElem();
+                slActionApart.getWinSize();
             });
         };
         slideChange();
