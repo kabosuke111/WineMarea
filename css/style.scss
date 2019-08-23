@@ -1504,6 +1504,7 @@ li {
     }
 }
 
+//メニューの内側の部分
 [class^="foodmenu"] {
     @include FLEX(flex, start);
     
@@ -1513,8 +1514,8 @@ li {
             display: block;
             @include MX(none,none,209px, 209px);
         }
-        
     }
+    
     dt:nth-of-type(2) {
         font: {
             weight: 400;
@@ -1538,7 +1539,7 @@ li {
 }
 
 .list-layer2 {
-    @include MX(none,none,251px, 360px);
+    @include MX(none, none, 251px, 360px);
     position: relative;
     padding: 0 21px;
 }

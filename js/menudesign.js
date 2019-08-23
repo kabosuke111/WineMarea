@@ -45,6 +45,7 @@
                 slMenuChild = slideMenu.children;//メニューulの子要素を取得
             },
             
+            //増やした要素を消す
             "removeElem" : function() {
                 let appElemLen = document.querySelectorAll('.appendElement').length;
                 for(var i = 0; i < appElemLen; i++) {
@@ -59,11 +60,11 @@
                 //4で割って余りが２の時 ＝ ２つ足す
                 //4で割って余りが１の時 ＝ ３つ足す
                 let addElemNum = 3;
-                
                 let ce = document.querySelectorAll('.menu-type');
                 let classElem = Array.from(ce);
                 
                 if(winSize <= 768) {
+                    this.removeElem();
                     if(slMenuChild % 4 === 1){addElemNum=3;};
                     for(var i = 0; i < addElemNum; i++) {
                         let elem = document.createElement('li');
@@ -72,12 +73,10 @@
                 } else {
                     this.removeElem();
                 };
-                   
-                
                 //デバッグ用
-                console.log(document.getElementById("menuTypeCommon"));
-                console.log(document.getElementById("menuTypeWeekday"));
-                console.log(document.getElementById("menuTypeHoliday"));
+//                console.log(document.getElementById("menuTypeCommon"));
+//                console.log(document.getElementById("menuTypeWeekday"));
+//                console.log(document.getElementById("menuTypeHoliday"));
             },
             
             "getWinSize" : function() {
@@ -105,26 +104,11 @@
 
         //スライドを動かすボタン。押した場所の日を代入する
         function slideChange() {
-//            const button = ['common', 'weekday', 'holiday'];
-//            for (var i = 0; i < button.length; i++) {
-//                document.getElementById(button[i] + "Button").addEventListener("click", function(){
-//                    slideMenu = document.getElementById(array[i]);
-//                    p = i;
-//                    slActionApart.init();
-//                    slActionApart.showChange();
-//                    slActionApart.removeElem();
-//                    slActionApart.getWinSize();
-//
-//                });    
-//            };
-            
-
             document.getElementById("commonButton").addEventListener("click", function(){
                 slideMenu = document.getElementById(array[0]);
                 p = 0;
                 slActionApart.init();
                 slActionApart.showChange();
-                slActionApart.removeElem();
                 slActionApart.getWinSize();
             });
             
@@ -133,7 +117,6 @@
                 p = 1;
                 slActionApart.init();
                 slActionApart.showChange();
-                slActionApart.removeElem();
                 slActionApart.getWinSize();
             });
 
@@ -142,7 +125,6 @@
                 p = 2;
                 slActionApart.init();
                 slActionApart.showChange();
-                slActionApart.removeElem();
                 slActionApart.getWinSize();
             });
         };
@@ -167,7 +149,6 @@
             } else {
                 slideActPoint = ((slMenuChild.length - 3) / 2);
             }
-
             slideAction();
         };
 

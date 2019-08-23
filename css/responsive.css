@@ -373,6 +373,60 @@
           width: 100px;
           background: transparent;
           color: transparent; }
+    #wrapper #main #food .food-contents-two .list-layer2 {
+      max-width: 320px;
+      max-height: none;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      float: left;
+      margin: 5px 5px 5px;
+      padding: 20px 0;
+      /*@include MX(none,none,251px, 360px);
+      position: relative;
+      padding: 0 21px;*/ }
+      #wrapper #main #food .food-contents-two .list-layer2 br {
+        display: none; }
+    #wrapper #main #food .food-contents-two [class^="foodmenu"] {
+      max-width: 660px;
+      max-height: none;
+      width: 100%;
+      height: auto;
+      margin: 0 auto; }
+      #wrapper #main #food .food-contents-two [class^="foodmenu"] dt:nth-of-type(1) img {
+        max-width: 209px;
+        max-height: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        min-width: 120px;
+        /*
+        display: block;
+        @include MX(none,none,209px, 209px);*/ }
+      #wrapper #main #food .food-contents-two [class^="foodmenu"] dt:nth-of-type(2) {
+        margin: 15px 0 0;
+        max-width: 170px;
+        width: 100%;
+        padding: 0 10px;
+        /*font: {
+            weight: 400;
+            size: 1.2rem;
+        }
+        text-align: left;
+        margin-top: 6px;*/ }
+      #wrapper #main #food .food-contents-two [class^="foodmenu"] dd {
+        top: 0;
+        left: 0;
+        /*background: $menu_main_color;
+        width: 46px;
+        border-radius: 3px;
+        line-height: 1.2;
+        font-family: $ENtitle_font;
+        color: #fff;
+        position: absolute;
+        top: 215px;
+        right: 23px;*/ }
     #wrapper #main #drink .drink-list {
       max-width: 1200px;
       margin: 20px auto 30px;
@@ -511,7 +565,7 @@
         line-height: 1.9; }
     .slidebar .nav-title.title-font {
       margin-top: 170px; } }
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .menu-type {
     display: flex;
     justify-content: flex-start;
