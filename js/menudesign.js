@@ -56,9 +56,6 @@
             
             //フレックスコンテナにエレメントを入れる
             "addElem" : function(winSize) {
-                //4で割って余りが３の時 ＝ １つ足す
-                //4で割って余りが２の時 ＝ ２つ足す
-                //4で割って余りが１の時 ＝ ３つ足す
                 let addElemNum = 3;
                 let ce = document.querySelectorAll('.menu-type');
                 let classElem = Array.from(ce);
