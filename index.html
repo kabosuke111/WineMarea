@@ -54,10 +54,7 @@
 </script>
 </head>
 <body>
-<div id="wrapper" class="animsition" data-animsition-in-class="fade-in-left"
-  data-animsition-in-duration="1000"
-  data-animsition-out-class="fade-out-left"
-  data-animsition-out-duration="800">
+<div id="wrapper">
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -68,7 +65,7 @@
 	<header id="header">
         <div class="header-contents-wrap">
     		<div class="header-contents-one">
-                <a class="maintitle animsition-link" href="index.html" data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="600"><img src="images/title_head.svg" alt="ワイン食堂 MAREA マレーア" width="215"></a>
+                <a class="maintitle animsition-link" href="index.html"><img src="images/title_head.svg" alt="ワイン食堂 MAREA マレーア" width="215"></a>
             </div>
             <div class="header-contents-two">
     			<p>ご予約・<br>お問合せ</p>
@@ -1186,36 +1183,6 @@ $('.hamburger').click(function() {
  } );
 } ) ( jQuery );
 </script>    
-    
-    
-<script>
-$(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in-left',
-    outClass: 'fade-out-left',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-    
-    
-</script>
 <script>
     (function() {
         var tabCnt = $(".tab-arti").length;
